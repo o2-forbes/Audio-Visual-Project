@@ -17,8 +17,24 @@ function setup() {
   
   // Draw sun with glow
   noStroke();
-  fill(254,254,254); // Yellow colour for the sun
+  fill(255,250,240); // Yellow colour for the sun
   ellipse(sunX, sunY, sunRadius * 2); // Draw sun
+
+  //Layer 3
+
+  //Draw Skyscraper
+  fill(228,90,143);
+  rect(775, 500, 50, 400);
+
+  //Draw Skyscraper 2
+  rect(620, 395, 45, 380);
+  rect(590, 470, 30, 30);
+  triangle(695, 410, 665, 410, 665, 395);
+  rect(630, 365,3,30);
+  rect(633, 383,3,8);
+  rect(627, 370,3,8);
+
+  //Draw Skyscraper 3
 
   //Layer 2
 
@@ -69,7 +85,7 @@ function setup() {
   rect(460, 650,15,15,4);
   rect(460, 690,15,15,4);
 
-  //Draw Skyscraper 3
+  //Draw Skyscraper 4
   rect(100, 480, 140, 400);
   rect(240, 505, 25, 400);
   triangle(240, 505, 265, 505, 240, 480);
@@ -91,6 +107,15 @@ function setup() {
   rect(95, 540,15,15,4);
   rect(95, 580,15,15,4);
   rect(95, 620,15,15,4);
+
+  //Draw Skyscraper 5
+  rect(0, 540, 50, 160);
+  rect(0, 525, 15, 15);
+  rect(25, 528, 5, 12);
+  rect(26, 508, 3, 20);
+  rect(40, 525, 3, 15);
+  rect(40, 555,15,15,4);
+  rect(40, 585,15,15,4);
 
   //Floor
   fill(137,1,89); 
