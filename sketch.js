@@ -77,6 +77,19 @@ function setup() {
   rect(410, 330, 30, 250);
 
   //Draw Skyscraper 6
+  rect(300, 220, 40, 300);
+  rect(340, 240, 20, 300);
+  triangle(340, 240, 360, 240, 340, 220);
+  rect(360, 300, 20, 300);
+  triangle(360, 300, 380, 300, 360, 280); 
+  rect(300, 200, 2, 20);
+  rect(308, 210, 2, 12);
+
+  //Draw Skyscraper 7
+  ellipse(270, 295, 25, 22)
+  rect(255, 295, 30, 500);
+
+  //Draw Skyscraper 8
 
   //Layer 3
 
