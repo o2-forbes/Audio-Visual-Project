@@ -90,6 +90,13 @@ function setup() {
   rect(255, 295, 30, 500);
 
   //Draw Skyscraper 8
+  rect(65, 230, 43, 500);
+  rect(108, 330, 23, 500);
+  rect(70, 210, 3, 22);
+  rect(75, 188, 2, 42);
+  rect(95, 222, 2, 22);
+
+  //Draw Skyscraper 9
 
   //Layer 3
 
