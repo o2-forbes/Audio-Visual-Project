@@ -312,6 +312,13 @@ function setup() {
   rect(572, 610,12,3, 5);
 
   //Chimney
+  rect(615, 470,5,30);
+  rect(630, 470,5,30);
+  triangle(615, 470, 615, 460, 620, 470);
+  triangle(630, 470, 635, 460, 635, 470);
+  rect(585, 495,7,7);
+  rect(595, 495,7,7);
+  rect(605, 495,7,7);
 
   //Draw Skyscraper
   fill(46,6,66); // colour for the skyscraper
