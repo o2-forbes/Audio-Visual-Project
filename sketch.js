@@ -14,11 +14,33 @@ function setup() {
   let sunX = width / 2;
   let sunY = 200;
   let sunRadius = 175;
-  
-  // Draw sun with glow
+  let glowRadius = sunRadius * 3;
+
+  // Draw sun glow
   noStroke();
-  fill(255,250,240); // Yellow colour for the sun
+  let glowOpacity = 50; // Initial opacity
+  let glowStep = 10; // Opacity decrement for each ellipse
+  let glowSizeStep = 20; // Size increment for each ellipse
+
+  for (let i = 0; i < 10; i++) { // Draw 10 ellipses for glow
+    fill(255, 250, 240, glowOpacity);
+    ellipse(sunX, sunY, glowRadius); // Draw ellipse
+    glowOpacity -= glowStep; // Decrease opacity for next ellipse
+    glowRadius += glowSizeStep; // Increase size for next ellipse
+  }
+
+  // Draw sun with glare
+  strokeWeight(2);
+  stroke(255,250,205);
+  fill(255, 250, 240); // Yellow colour for the sun
   ellipse(sunX, sunY, sunRadius * 2); // Draw sun
+  noStroke();
+
+  // Add glare effect
+  fill(255, 255, 200, 100); // Glare color with transparency
+  ellipse(sunX + 50, sunY - 50, sunRadius * 0.8); // Glare ellipse 1
+  ellipse(sunX - 30, sunY + 30, sunRadius * 0.5); // Glare ellipse 2
+  ellipse(sunX + 70, sunY + 60, sunRadius * 0.6); // Glare ellipse 3
 
   //Layer 4
 
@@ -39,6 +61,22 @@ function setup() {
   rect(623, 285, 30, 200);
 
   //Draw Skyscraper 3
+  rect(560, 350, 45, 250);
+  rect(540, 375, 25, 250);
+  triangle(560, 350, 515 + 45, 375, 540, 375);
+  rect(590, 330, 3, 20);
+  rect(575, 336, 3, 20);
+  rect(568, 346, 7, 4);
+
+  //Draw Skyscraper 4
+  rect(460, 295, 35, 250);
+  rect(480, 291, 12, 4);
+  rect(465, 289, 2, 6);
+
+  //Draw Skyscraper 5
+  rect(410, 330, 30, 250);
+
+  //Draw Skyscraper 6
 
   //Layer 3
 
