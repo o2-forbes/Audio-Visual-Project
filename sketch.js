@@ -20,6 +20,26 @@ function setup() {
   fill(255,250,240); // Yellow colour for the sun
   ellipse(sunX, sunY, sunRadius * 2); // Draw sun
 
+  //Layer 4
+
+  //Draw Skyscraper
+  fill(225,112,138);
+  rect(780, 320, 50, 200);
+
+  //Draw Skyscraper 2
+  rect(660, 175, 40, 250);
+  rect(700, 195, 20, 250);
+  triangle(700, 175, 700, 195, 720, 195);
+  rect(720, 285, 20, 200);
+  rect(728, 275, 2, 10);
+  rect(665, 150, 2, 25);
+  rect(674, 170, 18, 5);
+
+  //Draw Skyscraper 2
+  rect(623, 285, 30, 200);
+
+  //Draw Skyscraper 3
+
   //Layer 3
 
   //Draw Skyscraper
