@@ -146,6 +146,24 @@ function setup() {
   rect(240, 410, 3, 18);
 
   //Ladder
+  rect(141, 300, 3, 200);
+  noFill(); // Disable filling
+  stroke(228,90,143); // Set stroke color (white in this case)
+  strokeWeight(3); // Set stroke weight
+  line(143, 300, 165, 272);
+  fill(228,90,143);
+  noStroke();
+  rect(141, 314, 10, 3);
+  rect(141, 330, 10, 3);
+  rect(141, 346, 10, 3);
+  rect(141, 362, 10, 3);
+  rect(141, 378, 10, 3);
+  rect(141, 394, 10, 3);
+  rect(141, 410, 10, 3);
+  rect(141, 426, 10, 3);
+  rect(141, 442, 10, 3);
+  rect(141, 458, 10, 3);
+  rect(141, 474, 10, 3);
 
   //Draw Skyscraper
   rect(775, 500, 50, 400);
@@ -193,10 +211,7 @@ function setup() {
   rect(165, 270, 75, 380);
   rect(150, 290, 15, 380);
   triangle(165, 270, 150, 290, 165, 290);
-  rect(148, 310,6,12,4);
-  rect(148, 350,6,12,4);
-  rect(148, 390,6,12,4);
-  rect(148, 430,6,12,4);
+
   rect(236, 430,6,12,4);
   rect(236, 390,6,12,4);
   rect(236, 350,6,12,4);
@@ -603,6 +618,10 @@ function setup() {
   rect(125, 715, 10, 40, 4);
   rect(125, 775, 10, 40, 4);  
   rect(15, 610, 40, 30); 
+  rect(18, 580, 5, 30); 
+  rect(38, 585, 5, 30); 
+  rect(28, 590, 5, 30); 
+  rect(48, 595, 5, 30); 
   rect(105, 615, 12, 15); 
   // Draw an ellipse on top of the last rectangle
   ellipse(105 + 6, 620 - 7.5, 20); 
