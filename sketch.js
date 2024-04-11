@@ -9,7 +9,7 @@ function setup() {
   // Apply background gradient as a fill style
   drawingContext.fillStyle = backgroundGradient;
   rect(0, 0, width, height); // Draw background rectangle
-
+  
   // Set up sun
   let sunX = width / 2;
   let sunY = 200;
@@ -37,11 +37,25 @@ function setup() {
   noStroke();
 
   // Add glare effect
-  fill(255, 255, 200, 100); // Glare color with transparency
+  fill(255, 255, 200, 100); // Glare colour with transparency
   ellipse(sunX + 50, sunY - 50, sunRadius * 0.8); // Glare ellipse 1
   ellipse(sunX - 30, sunY + 30, sunRadius * 0.5); // Glare ellipse 2
   ellipse(sunX + 70, sunY + 60, sunRadius * 0.6); // Glare ellipse 3
+}
 
+
+function draw() {
+
+  // Call functions to draw layers in the desired order
+  drawLayer4();
+  drawLayer3();
+  drawLayer2();
+  drawLayer1();
+
+}
+
+// Function to draw the fourth layer
+function drawLayer4() {
   //Layer 4
 
   //Draw Skyscraper
@@ -100,7 +114,10 @@ function setup() {
   ellipse(5, 275, 35, 30)
   rect(0, 275, 50, 500);
   rect(40, 260, 2, 22);
+}
 
+// Function to draw the third layer
+function drawLayer3() {
   //Layer 3
 
   //Details
@@ -147,9 +164,9 @@ function setup() {
 
   //Ladder
   rect(141, 300, 3, 200);
-  noFill(); // Disable filling
-  stroke(228,90,143); // Set stroke color (white in this case)
-  strokeWeight(3); // Set stroke weight
+  noFill(); 
+  stroke(228,90,143); 
+  strokeWeight(3); 
   line(143, 300, 165, 272);
   fill(228,90,143);
   noStroke();
@@ -250,7 +267,10 @@ function setup() {
   rect(111, 440,6,8,4);
   rect(100, 394, 6, 6);
   rect(45, 390, 20, 10);
+}
 
+// Function to draw the second layer
+function drawLayer2() {
   //Layer 2
 
   //Details
@@ -453,23 +473,28 @@ function setup() {
   //Floor
   fill(137,1,89); 
   rect(300, 740, 600, 150);  
+}
+
+// Function to draw the first layer
+function drawLayer1() {
 
   //Layer 1
 
   //Details
 
   //Billboard
-  fill(46,6,66);
-  rect(680, 840,5,30);
-  rect(708, 840,5,30);
-  rect(673, 830,45,23, 5);
-  rect(680, 800,5,30);
-  rect(708, 800,5,30);
-  rect(673, 790,45,23, 5);
+  fill(46,6,66); // Set colour for all layer 1 assets.
+
+  rect(680, 840,5,30); // Draw left edge of the billboard
+  rect(708, 840,5,30); // Draw right edge of the billboard
+  rect(673, 830,45,23, 5); // Draw billboard body
+  rect(680, 800,5,30); // Draw left edge of the lower billboard
+  rect(708, 800,5,30); // Draw right edge of the lower billboard
+  rect(673, 790,45,23, 5); // Draw lower billboard body
 
   //Ladder
-  rect(730, 745,5,200);
-  rect(735, 745,20,5);
+  rect(730, 745,5,200); // Draw ladder post
+  rect(735, 745,20,5); // Draw ladder steps
   rect(735, 755,20,5);
   rect(735, 765,20,5);
   rect(735, 775,20,5);
@@ -477,22 +502,22 @@ function setup() {
   rect(735, 795,20,5);
 
   //Tank
-  rect(750, 565,20,15);
-  rect(746, 560,27,5);
+  rect(750, 565,20,15); // Draw tank base
+  rect(746, 560,27,5); // Draw tank top
   rect(746, 580,27,5);
-  rect(752, 580,3,25);
+  rect(752, 580,3,25); // Draw tank legs
   rect(759, 580,3,25);
   rect(766, 580,3,25);
 
-  //Water Pump
-  rect(520, 580,20,25, 3);
-  rect(518, 576,24,5, 3);
-  rect(524, 576,3,50);
-  rect(529, 576,3,50);
-  rect(534, 576,3,50);
-  rect(534, 565,3,12);
-  rect(511, 590,3,12, 5);
-  rect(514, 590,10,3, 5);
+   //Water Pump
+   rect(520, 580,20,25, 3); // Draw water pump base
+   rect(518, 576,24,5, 3); // Draw water pump top
+   rect(524, 576,3,50); // Draw water pump body
+   rect(529, 576,3,50);
+   rect(534, 576,3,50);
+   rect(534, 565,3,12); // Draw water pump handle
+   rect(511, 590,3,12, 5);
+   rect(514, 590,10,3, 5);
 
   //Pipes
   rect(565, 600,3,32, 5);
@@ -502,25 +527,25 @@ function setup() {
 
   //Clothes line
 
-  stroke(46,6,66);
-  line(120, 680, 220, 660);
-  line(820, 700, 620, 680);
-  noStroke();
+  stroke(46,6,66); // Set colour for clothes line
+  line(120, 680, 220, 660); // Draw left clothes line
+  line(820, 700, 620, 680); // Draw right clothes line
+  noStroke(); // Reset stroke style
 
   //Chimney
-  rect(615, 470,5,30);
-  rect(630, 470,5,30);
-  triangle(615, 470, 615, 460, 620, 470);
-  triangle(630, 470, 635, 460, 635, 470);
-  rect(585, 495,7,7);
-  rect(595, 495,7,7);
-  rect(605, 495,7,7);
+  rect(615, 470,5,30); // Draw chimney base
+  rect(630, 470,5,30); // Draw chimney base
+  triangle(615, 470, 615, 460, 620, 470); // Draw chimney top left
+  triangle(630, 470, 635, 460, 635, 470); // Draw chimney top right
+  rect(585, 495,7,7); // Draw chimney side left
+  rect(595, 495,7,7); // Draw chimney side middle
+  rect(605, 495,7,7); // Draw chimney side right
 
-  //Rails
-  rect(400, 810,200,5);
-  rect(400, 830,200,5);
-  rect(400, 850,200,5);
-  rect(440, 810,5,20);
+ //Rails
+ rect(400, 810,200,5); // Draw upper rail
+ rect(400, 830,200,5); // Draw middle rail
+ rect(400, 850,200,5); // Draw lower rail
+ rect(440, 810,5,20); // Draw rail posts
   rect(460, 810,5,20);
   rect(480, 810,5,20);
   rect(428, 830,5,20);
@@ -531,16 +556,16 @@ function setup() {
   rect(460, 850,5,20);
   rect(480, 850,5,20);
 
-  //Pipes
-  rect(140, 810,60,5);
-  rect(140, 810,5,50);
-  rect(200, 810,5,50);
-  rect(155, 790,5,50);
-  rect(175, 760,5,80);
+ //Pipes
+ rect(140, 810,60,5); // Draw left pipe
+ rect(140, 810,5,50);
+ rect(200, 810,5,50); // Draw right pipe
+ rect(155, 790,5,50);
+ rect(175, 760,5,80);
 
   //Chimney
-  rect(70, 600, 15, 40); 
-  triangle(70, 600, 70, 590, 85, 600);
+  rect(70, 600, 15, 40); // Draw chimney base
+  triangle(70, 600, 70, 590, 85, 600); // Draw chimney top
 
   //Draw Skyscraper
   fill(46,6,66); // colour for the skyscraper
