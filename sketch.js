@@ -165,6 +165,12 @@ function setup() {
   rect(141, 458, 10, 3);
   rect(141, 474, 10, 3);
 
+  //Outlet
+  rect(77, 387, 3, 30);
+  rect(85, 375, 3, 15);
+  rect(77, 387, 8, 3);
+  rect(90, 360, 3, 40);
+
   //Draw Skyscraper
   rect(775, 500, 50, 400);
 
