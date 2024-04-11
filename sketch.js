@@ -59,61 +59,93 @@ function drawLayer4() {
   //Layer 4
 
   //Draw Skyscraper
-  fill(225,112,138);
-  rect(780, 320, 50, 200);
+  fill(225,112,138); // Set colour for all layer 4 assets
+  rect(780, 320, 50, 200); // Draw the skyscraper
+
+  // Draw Skyscraper 2
+// Draw the main rectangular building
+rect(660, 175, 40, 250);
+// Draw the top part of the building
+rect(700, 195, 20, 250);
+triangle(700, 175, 700, 195, 720, 195);
+rect(720, 285, 20, 200);
+// Draw additional details
+rect(728, 275, 2, 10); // Detail on the top part
+rect(665, 150, 2, 25); // Detail on the left side
+rect(674, 170, 18, 5); // Detail on the left side
+
 
   //Draw Skyscraper 2
-  rect(660, 175, 40, 250);
-  rect(700, 195, 20, 250);
-  triangle(700, 175, 700, 195, 720, 195);
-  rect(720, 285, 20, 200);
-  rect(728, 275, 2, 10);
-  rect(665, 150, 2, 25);
-  rect(674, 170, 18, 5);
-
-  //Draw Skyscraper 2
+  // Draw the main rectangular building
   rect(623, 285, 30, 200);
 
-  //Draw Skyscraper 3
-  rect(560, 350, 45, 250);
-  rect(540, 375, 25, 250);
-  triangle(560, 350, 515 + 45, 375, 540, 375);
-  rect(590, 330, 3, 20);
-  rect(575, 336, 3, 20);
-  rect(568, 346, 7, 4);
+ // Draw Skyscraper 3
+// Draw the main rectangular building
+rect(560, 350, 45, 250);
+// Draw additional structure
+rect(540, 375, 25, 250); // Additional structure on the left
+triangle(560, 350, 515 + 45, 375, 540, 375); // Roof triangle
 
-  //Draw Skyscraper 4
-  rect(460, 295, 35, 250);
-  rect(480, 291, 12, 4);
-  rect(465, 289, 2, 6);
+// Draw decorative elements
+rect(590, 330, 3, 20);  // Decorative element 1
+rect(575, 336, 3, 20);  // Decorative element 2
+rect(568, 346, 7, 4);   // Decorative element 3
 
-  //Draw Skyscraper 5
-  rect(410, 330, 30, 250);
 
-  //Draw Skyscraper 6
-  rect(300, 220, 40, 300);
-  rect(340, 240, 20, 300);
-  triangle(340, 240, 360, 240, 340, 220);
-  rect(360, 300, 20, 300);
-  triangle(360, 300, 380, 300, 360, 280); 
-  rect(300, 200, 2, 20);
-  rect(308, 210, 2, 12);
+  // Draw Skyscraper 4
+// Draw the main rectangular building
+rect(460, 295, 35, 250);
+// Draw decorative elements
+rect(480, 291, 12, 4); // Decorative element 1
+rect(465, 289, 2, 6);  // Decorative element 2
 
-  //Draw Skyscraper 7
-  ellipse(270, 295, 25, 22)
-  rect(255, 295, 30, 500);
 
-  //Draw Skyscraper 8
-  rect(65, 230, 43, 500);
-  rect(108, 330, 23, 500);
-  rect(70, 210, 3, 22);
-  rect(75, 188, 2, 42);
-  rect(95, 222, 2, 22);
+  // Draw Skyscraper 5
+// Draw a rectangular skyscraper
+rect(410, 330, 30, 250);
+
+
+  // Draw Skyscraper 6
+// Draw the first section of the skyscraper
+rect(300, 220, 40, 300);
+// Draw the second section of the skyscraper
+rect(340, 240, 20, 300);
+// Draw the triangular roof for the second section
+triangle(340, 240, 360, 240, 340, 220);
+// Draw the third section of the skyscraper
+rect(360, 300, 20, 300);
+// Draw the triangular roof for the third section
+triangle(360, 300, 380, 300, 360, 280); 
+// Draw additional details on the building
+rect(300, 200, 2, 20); // Detail 1
+rect(308, 210, 2, 12); // Detail 2
+
+
+  // Draw Skyscraper 7
+// Draw circular top
+ellipse(270, 295, 25, 22);
+// Draw rectangular base
+rect(255, 295, 30, 500);
+
+  // Draw Skyscraper 8
+// Draw the first section of the skyscraper
+rect(65, 230, 43, 500);
+// Draw the second section of the skyscraper
+rect(108, 330, 23, 500);
+// Draw details on the side of the building
+rect(70, 210, 3, 22); // Detail 1
+rect(75, 188, 2, 42); // Detail 2
+rect(95, 222, 2, 22); // Detail 3
+
 
   //Draw Skyscraper 9
-  ellipse(5, 275, 35, 30)
-  rect(0, 275, 50, 500);
-  rect(40, 260, 2, 22);
+// Draw circular top
+ellipse(5, 275, 35, 30);
+// Draw rectangular base
+rect(0, 275, 50, 500);
+// Draw detail on the side of the building
+rect(40, 260, 2, 22);
+
 }
 
 // Function to draw the third layer
@@ -123,53 +155,68 @@ function drawLayer3() {
   //Details
 
   //Box
-  fill(228,90,143);
-  rect(465, 428, 35, 7);
-  rect(470, 421, 25, 7);
-  rect(475, 414, 15, 7);
+// Draw the top layer of the box
+fill(228, 90, 143); // Set colour for all layer 3 assets
+rect(465, 428, 35, 7); // Draw the top rectangle
+
+// Draw the middle layer of the box
+rect(470, 421, 25, 7); // Draw the middle rectangle
+
+// Draw the bottom layer of the box
+rect(475, 414, 15, 7); // Draw the bottom rectangle
   
   //Cables
-  rect(590, 430, 55, 5);
-  rect(590, 438, 55, 3);
-  rect(590, 446, 55, 3);
-  rect(590, 430, 5, 55);
-  rect(599, 447, 3, 23);
-  rect(607, 447, 3, 23);
-  rect(615, 447, 3, 23);
+// Draw horizontal cable segments
+rect(590, 430, 55, 5);
+rect(590, 438, 55, 3);
+rect(590, 446, 55, 3);
+
+// Draw vertical cable segments
+rect(590, 430, 5, 55);
+
+// Draw cable connectors
+rect(599, 447, 3, 23);
+rect(607, 447, 3, 23);
+rect(615, 447, 3, 23);
+
 
   //Cables
-  rect(240, 460, 40, 3);
-  rect(240, 445, 40, 3);
-  rect(240, 410, 40, 3);
-  rect(240, 425, 40, 3);
-  rect(240, 480, 40, 3);
-  rect(240, 495, 40, 3);
-  rect(245, 480, 3, 18);
-  rect(250, 480, 3, 18);
-  rect(255, 480, 3, 18);
-  rect(260, 480, 3, 18);
-  rect(265, 480, 3, 18);
-  rect(265, 445, 3, 18);
-  rect(260, 445, 3, 18);
-  rect(255, 445, 3, 18);
-  rect(250, 445, 3, 18);
-  rect(245, 445, 3, 18);
-  rect(240, 445, 3, 18);
-  rect(265, 410, 3, 18);
-  rect(260, 410, 3, 18);
-  rect(255, 410, 3, 18);
-  rect(250, 410, 3, 18);
-  rect(245, 410, 3, 18);
-  rect(240, 410, 3, 18);
+  // Draw vertical cable segments
+rect(240, 460, 40, 3);
+rect(240, 445, 40, 3);
+rect(240, 410, 40, 3);
+rect(240, 425, 40, 3);
+rect(240, 480, 40, 3);
+rect(240, 495, 40, 3);
+
+// Draw cable connectors
+rect(245, 480, 3, 18);
+rect(250, 480, 3, 18);
+rect(255, 480, 3, 18);
+rect(260, 480, 3, 18);
+rect(265, 480, 3, 18);
+rect(265, 445, 3, 18);
+rect(260, 445, 3, 18);
+rect(255, 445, 3, 18);
+rect(250, 445, 3, 18);
+rect(245, 445, 3, 18);
+rect(240, 445, 3, 18);
+rect(265, 410, 3, 18);
+rect(260, 410, 3, 18);
+rect(255, 410, 3, 18);
+rect(250, 410, 3, 18);
+rect(245, 410, 3, 18);
+rect(240, 410, 3, 18);
 
   //Ladder
-  rect(141, 300, 3, 200);
-  noFill(); 
-  stroke(228,90,143); 
-  strokeWeight(3); 
-  line(143, 300, 165, 272);
-  fill(228,90,143);
-  noStroke();
+  rect(141, 300, 3, 200); // Draw the main vertical bar of the ladder
+  noFill(); // No fill for subsequent shapes
+  stroke(228,90,143); // Set stroke colour to a shade of pink
+  strokeWeight(3); // Set stroke weight to 3 pixels
+  line(143, 300, 165, 272); // Draw diagonal support line for the ladder
+  fill(228,90,143); // Set fill colour to the same shade of pink
+  noStroke(); // No stroke for subsequent shapes
+  //Draw ladder steps
   rect(141, 314, 10, 3);
   rect(141, 330, 10, 3);
   rect(141, 346, 10, 3);
@@ -183,16 +230,19 @@ function drawLayer3() {
   rect(141, 474, 10, 3);
 
   //Outlet
-  rect(77, 387, 3, 30);
-  rect(85, 375, 3, 15);
-  rect(77, 387, 8, 3);
-  rect(90, 360, 3, 40);
+//Draw outlet bars
+rect(77, 387, 3, 30); // Draw first outlet bar
+rect(85, 375, 3, 15); // Draw second outlet bar
+rect(77, 387, 8, 3); // Draw third outlet bar
+rect(90, 360, 3, 40); // Draw fourth outlet bar
 
   //Draw Skyscraper
-  rect(775, 500, 50, 400);
+rect(775, 500, 50, 400); // Draw main body of the skyscraper
 
   //Draw Skyscraper 2
-  rect(620, 395, 45, 380);
+  rect(620, 395, 45, 380); // Draw main body of the skyscraper
+
+  // Draw additional details
   rect(590, 470, 30, 30);
   triangle(695, 410, 665, 410, 665, 395);
   rect(630, 365,3,30);
@@ -200,73 +250,75 @@ function drawLayer3() {
   rect(627, 370,3,8);
 
   //Draw Skyscraper 3
-  rect(455, 435, 100, 380);
+  rect(455, 435, 100, 380); // Draw main body of the skyscraper
+
+  // Draw additional details
   rect(515, 431, 30, 4);
   rect(530, 428, 12, 3);
   rect(520, 419, 2, 12);
 
   //Draw Skyscraper 4
-  rect(370, 350, 55, 380);
-  ellipse(397.5, 360, 50, 45);
-  rect(368, 360,6,6,4);
-  rect(368, 370,6,6,4);
-  rect(421, 360,6,6,4);
-  rect(421, 370,6,6,4);
-  rect(368, 400,6,6,4);
-  rect(368, 410,6,6,4);
-  rect(368, 440,6,6,4);
-  rect(368, 450,6,6,4);
-  rect(421, 400,6,6,4);
-  rect(421, 410,6,6,4);
-  rect(421, 440,6,6,4);
-  rect(421, 450,6,6,4);
+rect(370, 350, 55, 380); // Draw main body of the skyscraper
+ellipse(397.5, 360, 50, 45); // Draw rounded top of the skyscraper
 
-  //Draw Skyscraper 5
-  rect(270, 410, 60, 380);
-  rect(330, 430, 15, 380);
-  triangle(330, 410, 330, 430, 345, 430);
+  // Draw details on the sides
+rect(368, 360, 6, 6, 4); // Draw detail on the left side
+rect(368, 370, 6, 6, 4); // Draw detail on the left side
+rect(421, 360, 6, 6, 4); // Draw detail on the right side
+rect(421, 370, 6, 6, 4); // Draw detail on the right side
+rect(368, 400, 6, 6, 4); // Draw detail on the left side
+rect(368, 410, 6, 6, 4); // Draw detail on the left side
+rect(368, 440, 6, 6, 4); // Draw detail on the left side
+rect(368, 450, 6, 6, 4); // Draw detail on the left side
+rect(421, 400, 6, 6, 4); // Draw detail on the right side
+rect(421, 410, 6, 6, 4); // Draw detail on the right side
+rect(421, 440, 6, 6, 4); // Draw detail on the right side
+rect(421, 450, 6, 6, 4); // Draw detail on the right side
+
+ //Draw Skyscraper 5
+rect(270, 410, 60, 380); // Draw main body of the skyscraper
+rect(330, 430, 15, 380); // Draw right side details
+triangle(330, 410, 330, 430, 345, 430); 
+
+// Draw additional details
   rect(315, 405, 5, 5);
   rect(305, 400, 3, 10);
   rect(288, 406, 10, 4);
   rect(274, 401, 10, 9);
 
-  //Draw Skyscraper 6
-  rect(165, 270, 75, 380);
-  rect(150, 290, 15, 380);
-  triangle(165, 270, 150, 290, 165, 290);
+ //Draw Skyscraper 6
+rect(165, 270, 75, 380); // Draw main body of the skyscraper
+rect(150, 290, 15, 380); // Draw left side detail
+triangle(165, 270, 150, 290, 165, 290); // Draw left side detail
 
-  rect(236, 430,6,12,4);
-  rect(236, 390,6,12,4);
-  rect(236, 350,6,12,4);
-  rect(236, 310,6,12,4);
-  rect(220, 230, 2, 40);
-  rect(220, 230, 4, 10);
-  rect(218, 260, 4, 10);
-  rect(205, 250, 2, 20);
-  rect(204, 265, 4, 6);
-  rect(204, 250, 4, 6);
+// Draw right side details
+rect(236, 430, 6, 12, 4); // Draw each right side detail
+rect(236, 390, 6, 12, 4); 
+rect(236, 350, 6, 12, 4); 
+rect(236, 310, 6, 12, 4); 
+rect(220, 230, 2, 40); // Draw additional details
+rect(220, 230, 4, 10); 
+rect(218, 260, 4, 10); 
+rect(205, 250, 2, 20); 
+rect(204, 265, 4, 6); 
+rect(204, 250, 4, 6); 
+
 
   //Draw Skyscraper 7
-  rect(35, 400, 80, 380)
-  rect(33, 410,6,8,4);
-  rect(33, 420,6,8,4);
-  rect(33, 430,6,8,4);
-  rect(33, 440,6,8,4);
-  rect(33, 450,6,8,4);
-  rect(33, 460,6,8,4);
-  rect(33, 470,6,8,4);
-  rect(33, 480,6,8,4);
-  rect(33, 490,6,8,4);
-  rect(33, 500,6,8,4);
-  rect(33, 510,6,8,4);
-  rect(33, 520,6,8,4);
-  rect(33, 530,6,8,4);;
-  rect(111, 410,6,8,4);
-  rect(111, 420,6,8,4);
-  rect(111, 430,6,8,4);
-  rect(111, 440,6,8,4);
-  rect(100, 394, 6, 6);
-  rect(45, 390, 20, 10);
+  rect(35, 400, 80, 380) // Draw main body of the skyscraper
+
+// Draw left side details
+for (let y = 410; y <= 530; y += 10) {
+  rect(33, y, 6, 8, 4); // Draw each left side detail
+}
+
+// Draw right side details
+for (let y = 410; y <= 440; y += 10) {
+  rect(111, y, 6, 8, 4); // Draw each right side detail
+}
+  // Draw additional details
+rect(100, 394, 6, 6); // Draw additional detail
+rect(45, 390, 20, 10); // Draw additional detail
 }
 
 // Function to draw the second layer
@@ -275,204 +327,172 @@ function drawLayer2() {
 
   //Details
 
-  //Train Tracks
-  fill(220,20,60); 
-  rect(0, 525, width, 15); 
-  rect(0,519, 3, 6);
-  rect(10,519, 3, 6);
-  rect(20,519, 3, 6);
-  rect(30,519, 3, 6);
-  rect(40,519, 3, 6);
-  rect(50,519, 3, 6);
-  rect(60,519, 3, 6);
-  rect(70,519, 3, 6);
-  rect(80,519, 3, 6);
-  rect(90,519, 3, 6);
-  rect(100,519, 3, 6);
-  rect(270,519, 3, 6);
-  rect(280,519, 3, 6);
-  rect(290,519, 3, 6);
-  rect(300,519, 3, 6);
-  rect(310,519, 3, 6);
-  rect(320,519, 3, 6);
-  rect(330,519, 3, 6);
-  rect(340,519, 3, 6);
-  rect(450,519, 3, 6);
-  rect(460,519, 3, 6);
-  rect(470,519, 3, 6);
-  rect(480,519, 3, 6);
-  rect(490,519, 3, 6);
-  rect(500,519, 3, 6);
-  rect(510,519, 3, 6);
-  rect(520,519, 3, 6);
-  rect(530,519, 3, 6);
-  rect(540,519, 3, 6);
-  rect(550,519, 3, 6);
-  rect(560,519, 3, 6);
-  rect(570,519, 3, 6);
-  rect(660,519, 3, 6);
-  rect(782,519, 3, 6);
-  rect(792,519, 3, 6);
+//Train Tracks
+fill(220, 20, 60); // Set colour for the train tracks
 
-  //Train Stands
-  rect(90,519, 6, 200);
-  rect(60,519, 6, 200);
-  rect(270,519, 6, 200);
-  rect(300,519, 6, 200);
-  rect(480,519, 6, 300);
-  rect(510,519, 6, 300);
-  rect(540,519, 6, 300);
-  rect(570,519, 6, 300);
-  rect(655,519, 6, 300);
-  rect(785,519, 6, 300);
-  rect(0,560, 800, 6);
-  rect(0,590, 800, 6);
-  rect(0,620, 800, 6);
-  rect(0,650, 800, 6);
-  rect(0,680, 800, 6);
-  rect(0,710, 800, 6);
+// Draw main track
+rect(0, 525, width, 15); // Draw main track
+
+// Draw crossbars
+for (let i = 0; i <= 800; i += 10) {
+  rect(i, 519, 3, 6); // Draw each crossbar
+}
+
+  // Train Stands
+  // Draw vertical stands
+  rect(90, 519, 6, 200);
+  rect(60, 519, 6, 200);
+  rect(270, 519, 6, 200);
+  rect(300, 519, 6, 200);
+  rect(480, 519, 6, 300);
+  rect(510, 519, 6, 300);
+  rect(540, 519, 6, 300);
+  rect(570, 519, 6, 300);
+  rect(655, 519, 6, 300);
+  rect(785, 519, 6, 300);
+  // Draw horizontal stands
+  rect(0, 560, 800, 6);
+  rect(0, 590, 800, 6);
+  rect(0, 620, 800, 6);
+  rect(0, 650, 800, 6);
+  rect(0, 680, 800, 6);
+  rect(0, 710, 800, 6);
 
   //Tank
-  fill(137,1,89)
-  rect(65, 570,23,23, 5);
-  rect(80, 575,100,3, 5);
-  rect(80, 585,100,3, 5);
-  rect(40, 575,100,3, 5);
-  rect(40, 585,100,3, 5);
+fill(137, 1, 89); // Set colour
 
-  //Billboard
-  rect(680, 400,3,30);
-  rect(710, 400,3,30);
-  rect(673, 377,45,23, 5);
+// Draw tank body
+rect(65, 570, 23, 23, 5); // Draw tank body
+
+// Draw tank pipes
+rect(80, 575, 100, 3, 5); // Draw top pipe
+rect(80, 585, 100, 3, 5); // Draw bottom pipe
+rect(40, 575, 100, 3, 5); // Draw top pipe
+rect(40, 585, 100, 3, 5); // Draw bottom pipe
+
+
+ //Billboard
+fill(137, 1, 89); // Set colour for all layer 2 assets
+
+// Draw billboard
+rect(680, 400, 3, 30); // Draw left stand of the billboard
+rect(710, 400, 3, 30); // Draw right stand of the billboard
+rect(673, 377, 45, 23, 5); // Draw main billboard area
+
   
   //Outlet
-  rect(750, 415,20,5);
-  rect(750, 425,24,5);
-  rect(750, 435,16,5);
-  rect(750, 445,21,5);
-  rect(750, 455,17,5);
-  rect(440, 495,10,15);
-  rect(450, 495,6,25);
+  // Draw outlet bars
+  rect(750, 415, 20, 5); 
+  rect(750, 425, 24, 5);
+  rect(750, 435, 16, 5);
+  rect(750, 445, 21, 5);
+  rect(750, 455, 17, 5);
+  rect(440, 495, 10, 15); // Draw outlet base
+  rect(450, 495, 6, 25); // Draw outlet pipe
 
   //Ruins
-  rect(385, 440,3,40);
-  rect(395, 425,3,60);
-  rect(385, 445,10,3);
-  rect(385, 455,10,3);
-  rect(385, 465,10,3);
-  rect(385, 475,10,3);
+// Draw ruins structures
+rect(385, 440, 3, 40); // Draw vertical details
+rect(395, 425, 3, 60); 
+rect(385, 445, 10, 3); // Draw horizontal details
+rect(385, 455, 10, 3); 
+rect(385, 465, 10, 3); 
+rect(385, 475, 10, 3); 
 
-  //Ladder
-  rect(657, 440,15,4,5);
-  rect(657, 450,15,4,5);
-  rect(657, 460,15,4,5);
-  rect(657, 470,15,4,5);
-  rect(657, 480,15,4,5);
-  rect(657, 490,15,4,5);
-  rect(657, 500,15,4,5);
-  rect(657, 510,15,4,5);
-  rect(657, 520,15,4,5);
-  rect(657, 530,15,4,5);
-  rect(657, 540,15,4,5);
-  rect(657, 550,15,4,5);
-  rect(657, 560,15,4,5);
-  rect(657, 570,15,4,5);
-  rect(657, 580,15,4,5);
-  rect(657, 590,15,4,5);
-  rect(657, 600,15,4,5);
-  rect(657, 610,15,4,5);
-  rect(657, 620,15,4,5);
-  rect(657, 630,15,4,5);
-  rect(657, 640,15,4,5);
-  rect(657, 650,15,4,5);
-  rect(657, 660,15,4,5);
-  rect(657, 670,15,4,5);
-  rect(657, 680,15,4,5);
-  rect(657, 690,15,4,5);
-  rect(657, 700,15,4,5);
-  rect(657, 710,15,4,5);
-  rect(655, 440,3,274,5);
+ //Ladder
+// Draw ladder steps
+for (let y = 440; y <= 710; y += 10) {
+  rect(657, y, 15, 4, 5); // Draw each step of the ladder
+}
+// Draw ladder sides
+rect(655, 440, 3, 274, 5); // Draw the sides of the ladder
 
-  //Pipes
-  rect(486, 575,3,92,5);
-  rect(481, 679,3,30,5);
-  rect(465, 575,22,3,5);
-  rect(468, 630,20,3,5);
-  rect(476, 679,13,3,5);
-  rect(476, 708,13,3,5);
-  rect(486, 727,15,3,5);
-  rect(486, 708,3,20,5);
-  rect(476, 708,3,35,5);
-  rect(486, 666,15,3,5);
-  rect(486, 668,3,13,5);
-  rect(468, 595,10,3,5);
-  rect(476, 595,3,85,5);
 
-  //Draw Skyscraper
-  fill(137,1,89); 
-  rect(665, 410, 90, 560);
-  rect(735, 500, 43, 500);
-  rect(768, 510,15,15,4);
-  rect(768, 550,15,15,4);
-  rect(740, 380,3,30);
-  rect(560, 525,3,35);
-  rect(730, 395,3,25);
-  rect(550, 545,3,30);
-  rect(549, 536,5,9);
-  rect(739, 385,5,9);
-  rect(739, 400,5,9);
+//Pipes
+// Draw pipe segments
+rect(486, 575, 3, 92, 5); // Draw vertical segment
+rect(481, 679, 3, 30, 5); // Draw vertical segment
+rect(465, 575, 22, 3, 5); // Draw horizontal segment
+rect(468, 630, 20, 3, 5); // Draw horizontal segment
+rect(476, 679, 13, 3, 5); // Draw horizontal segment
+rect(476, 708, 13, 3, 5); // Draw horizontal segment
+rect(486, 727, 15, 3, 5); // Draw horizontal segment
+rect(486, 708, 3, 20, 5); // Draw vertical segment
+rect(476, 708, 3, 35, 5); // Draw vertical segment
+rect(486, 666, 15, 3, 5); // Draw horizontal segment
+rect(486, 668, 3, 13, 5); // Draw vertical segment
+rect(468, 595, 10, 3, 5); // Draw horizontal segment
+rect(476, 595, 3, 85, 5); // Draw vertical segment
 
-  //Draw Skyscraper 2
-  rect(540, 560, 70, 300);
-  rect(535, 570,15,15,4);
-  rect(535, 605,15,15,4);
+ // Draw Skyscraper
+rect(665, 410, 90, 560); // Draw main body of the skyscraper
+rect(735, 500, 43, 500); // Draw right side structure
+rect(768, 510, 15, 15, 4); // Draw top right structure
+rect(768, 550, 15, 15, 4); // Draw bottom right structure
+rect(740, 380, 3, 30); // Draw right side detail
+rect(560, 525, 3, 35); // Draw left side detail
+rect(730, 395, 3, 25); // Draw right side detail
+rect(550, 545, 3, 30); // Draw left side detail
+rect(549, 536, 5, 9); // Draw top left detail
+rect(739, 385, 5, 9); // Draw bottom left detail
+rect(739, 400, 5, 9); // Draw bottom left detail
 
-  //Draw Skyscraper 3
-  rect(350, 480, 90, 300);
-  rect(440, 540, 30, 240);
-  rect(320, 540, 30, 240);
-  rect(425, 440,2,40);
-  rect(360, 450,2,30);
-  rect(422, 468,3,9);
-  rect(426, 455,3,9);
-  rect(422, 442,3,9);
-  ellipse(361, 450, 5, 5);
-  triangle(440, 515, 440, 540, 470, 540); // Define the vertices of the triangle
-  triangle(350, 515, 320, 540, 350, 780); // Define the vertices of the triangle
-  fill(137,1,89);
-  triangle(735, 430, 735, 500, 778, 500); // Define the vertices of the triangle
+ // Draw Skyscraper 2
+rect(540, 560, 70, 300); // Draw main body of the skyscraper
+rect(535, 570, 15, 15, 4); // Draw top left structure
+rect(535, 605, 15, 15, 4); // Draw bottom left structure
+
+
+ // Draw Skyscraper 3
+rect(350, 480, 90, 300); // Draw main body of the skyscraper
+rect(440, 540, 30, 240); // Draw right side structure
+rect(320, 540, 30, 240); // Draw left side structure
+rect(425, 440, 2, 40); // Draw right detail
+rect(360, 450, 2, 30); // Draw left detail
+rect(422, 468, 3, 9); // Draw top right detail
+rect(426, 455, 3, 9); // Draw middle right detail
+rect(422, 442, 3, 9); // Draw bottom right detail
+ellipse(361, 450, 5, 5); // Draw window detail
+triangle(440, 515, 440, 540, 470, 540); // Draw top right structure
+triangle(350, 515, 320, 540, 350, 780); // Draw top left structure
+fill(137, 1, 89); // Set fill color to a shade of purple
+triangle(735, 430, 735, 500, 778, 500); // Draw additional structure
+
  
-  //Draw Skyscraper 4
-  rect(100, 480, 140, 400);
-  rect(240, 505, 25, 400);
-  triangle(240, 505, 265, 505, 240, 480);
-  rect(110, 450, 30, 30);
-  rect(128, 440, 12, 12);
-  rect(140, 468, 95, 3);
-  rect(232, 468, 3, 20);
-  rect(222, 468, 3, 20);
-  rect(212, 468, 3, 20);
-  rect(202, 468, 3, 20);
-  rect(192, 468, 3, 20);
-  rect(182, 468, 3, 20);
-  rect(172, 468, 3, 20);
-  rect(162, 468, 3, 20);
-  rect(152, 468, 3, 20);
-  rect(142, 468, 3, 20);
-  rect(255, 520,15,15,4);
-  rect(95, 500,15,15,4);
-  rect(95, 530,15,15,4);
+ // Draw Skyscraper 4
+rect(100, 480, 140, 400); // Draw main body of the skyscraper
+rect(240, 505, 25, 400); // Draw right side structure
+triangle(240, 505, 265, 505, 240, 480); // Draw top structure
+rect(110, 450, 30, 30); // Draw left side structure
+rect(128, 440, 12, 12); // Draw detail
+rect(140, 468, 95, 3); // Draw horizontal detail
+rect(232, 468, 3, 20); // Draw vertical details
+rect(222, 468, 3, 20); 
+rect(212, 468, 3, 20); 
+rect(202, 468, 3, 20); 
+rect(192, 468, 3, 20); 
+rect(182, 468, 3, 20); 
+rect(172, 468, 3, 20); 
+rect(162, 468, 3, 20); 
+rect(152, 468, 3, 20); 
+rect(142, 468, 3, 20); 
+rect(255, 520, 15, 15, 4); // Draw top right structure
+rect(95, 500, 15, 15, 4); // Draw top left structure
+rect(95, 530, 15, 15, 4); // Draw bottom left structure
 
-  //Draw Skyscraper 5
-  rect(0, 540, 50, 160);
-  rect(0, 525, 15, 15);
-  rect(25, 528, 5, 12);
-  rect(26, 508, 3, 20);
-  rect(40, 525, 3, 15);
+
+ // Draw Skyscraper 5
+rect(0, 540, 50, 160); // Draw main body of the skyscraper
+rect(0, 525, 15, 15); // Draw top left structure
+rect(25, 528, 5, 12); // Draw top left detail
+rect(26, 508, 3, 20); // Draw bottom left detail
+rect(40, 525, 3, 15); // Draw top right detail
+
 
   //Floor
-  fill(137,1,89); 
-  rect(300, 740, 600, 150);  
+fill(137, 1, 89); // Set fill color to a shade of purple
+rect(300, 740, 600, 150); // Draw the floor rectangle
+
 }
 
 // Function to draw the first layer
@@ -482,15 +502,18 @@ function drawLayer1() {
 
   //Details
 
-  //Billboard
-  fill(46,6,66); // Set colour for all layer 1 assets.
+ //Billboard
+fill(46, 6, 66); // Set colour for all layer 1 assets
 
-  rect(680, 840,5,30); // Draw left edge of the billboard
-  rect(708, 840,5,30); // Draw right edge of the billboard
-  rect(673, 830,45,23, 5); // Draw billboard body
-  rect(680, 800,5,30); // Draw left edge of the lower billboard
-  rect(708, 800,5,30); // Draw right edge of the lower billboard
-  rect(673, 790,45,23, 5); // Draw lower billboard body
+// Draw the main billboard structure
+rect(680, 840, 5, 30); // Draw left edge of the billboard
+rect(708, 840, 5, 30); // Draw right edge of the billboard
+rect(673, 830, 45, 23, 5); // Draw billboard body
+
+// Draw the lower section of the billboard
+rect(680, 800, 5, 30); // Draw left edge of the lower billboard
+rect(708, 800, 5, 30); // Draw right edge of the lower billboard
+rect(673, 790, 45, 23, 5); // Draw lower billboard body
 
   //Ladder
   rect(730, 745,5,200); // Draw ladder post
@@ -501,164 +524,176 @@ function drawLayer1() {
   rect(735, 785,20,5);
   rect(735, 795,20,5);
 
-  //Tank
-  rect(750, 565,20,15); // Draw tank base
-  rect(746, 560,27,5); // Draw tank top
-  rect(746, 580,27,5);
-  rect(752, 580,3,25); // Draw tank legs
-  rect(759, 580,3,25);
-  rect(766, 580,3,25);
+ //Tank
+rect(750, 565, 20, 15); // Draw tank base
+rect(746, 560, 27, 5); // Draw tank top
+rect(746, 580, 27, 5);
+rect(752, 580, 3, 25); // Draw tank legs
+rect(759, 580, 3, 25);
+rect(766, 580, 3, 25);
 
-   //Water Pump
-   rect(520, 580,20,25, 3); // Draw water pump base
-   rect(518, 576,24,5, 3); // Draw water pump top
-   rect(524, 576,3,50); // Draw water pump body
-   rect(529, 576,3,50);
-   rect(534, 576,3,50);
-   rect(534, 565,3,12); // Draw water pump handle
-   rect(511, 590,3,12, 5);
-   rect(514, 590,10,3, 5);
+  //Water Pump
+rect(520, 580, 20, 25, 3); // Draw water pump base
+rect(518, 576, 24, 5, 3); // Draw water pump top
+rect(524, 576, 3, 50); // Draw water pump body
+rect(529, 576, 3, 50);
+rect(534, 576, 3, 50);
+rect(534, 565, 3, 12); // Draw water pump handle
+rect(511, 590, 3, 12, 5); // Draw left part of the handle
+rect(514, 590, 10, 3, 5); // Draw right part of the handle
+
 
   //Pipes
-  rect(565, 600,3,32, 5);
-  rect(565, 600,18,3, 5);
-  rect(572, 610,3,32, 5);
-  rect(572, 610,12,3, 5);
+// Draw pipe segments
+rect(565, 600, 3, 32, 5); // Draw left vertical segment
+rect(565, 600, 18, 3, 5); // Draw left horizontal segment
+rect(572, 610, 3, 32, 5); // Draw right vertical segment
+rect(572, 610, 12, 3, 5); // Draw right horizontal segment
 
-  //Clothes line
-
-  stroke(46,6,66); // Set colour for clothes line
-  line(120, 680, 220, 660); // Draw left clothes line
-  line(820, 700, 620, 680); // Draw right clothes line
-  noStroke(); // Reset stroke style
+//Clothes line
+stroke(46, 6, 66); // Set color for the clothes line
+line(120, 680, 220, 660); // Draw left clothes line
+line(820, 700, 620, 680); // Draw right clothes line
+noStroke(); // Reset stroke style to remove the stroke from subsequent shapes
 
   //Chimney
-  rect(615, 470,5,30); // Draw chimney base
-  rect(630, 470,5,30); // Draw chimney base
-  triangle(615, 470, 615, 460, 620, 470); // Draw chimney top left
-  triangle(630, 470, 635, 460, 635, 470); // Draw chimney top right
-  rect(585, 495,7,7); // Draw chimney side left
-  rect(595, 495,7,7); // Draw chimney side middle
-  rect(605, 495,7,7); // Draw chimney side right
+rect(615, 470, 5, 30); // Draw left part of chimney base
+rect(630, 470, 5, 30); // Draw right part of chimney base
+
+// Draw chimney tops
+triangle(615, 470, 615, 460, 620, 470); // Draw chimney top left
+triangle(630, 470, 635, 460, 635, 470); // Draw chimney top right
+
+// Draw chimney sides
+rect(585, 495, 7, 7); // Draw left side of the chimney
+rect(595, 495, 7, 7); // Draw middle side of the chimney
+rect(605, 495, 7, 7); // Draw right side of the chimney
+
 
  //Rails
- rect(400, 810,200,5); // Draw upper rail
- rect(400, 830,200,5); // Draw middle rail
- rect(400, 850,200,5); // Draw lower rail
- rect(440, 810,5,20); // Draw rail posts
-  rect(460, 810,5,20);
-  rect(480, 810,5,20);
-  rect(428, 830,5,20);
-  rect(448, 830,5,20);
-  rect(468, 830,5,20);
-  rect(488, 830,5,20);
-  rect(440, 850,5,20);
-  rect(460, 850,5,20);
-  rect(480, 850,5,20);
+rect(400, 810, 200, 5); // Draw upper rail
+rect(400, 830, 200, 5); // Draw middle rail
+rect(400, 850, 200, 5); // Draw lower rail
+
+// Draw rail posts
+rect(440, 810, 5, 20);
+rect(460, 810, 5, 20);
+rect(480, 810, 5, 20);
+
+rect(428, 830, 5, 20);
+rect(448, 830, 5, 20);
+rect(468, 830, 5, 20);
+rect(488, 830, 5, 20);
+
+rect(440, 850, 5, 20);
+rect(460, 850, 5, 20);
+rect(480, 850, 5, 20);
 
  //Pipes
- rect(140, 810,60,5); // Draw left pipe
- rect(140, 810,5,50);
- rect(200, 810,5,50); // Draw right pipe
- rect(155, 790,5,50);
- rect(175, 760,5,80);
+rect(140, 810, 60, 5); // Draw left pipe (horizontal)
+rect(140, 810, 5, 50); // Draw left pipe (vertical)
+rect(200, 810, 5, 50); // Draw right pipe (vertical)
+rect(155, 790, 5, 50); // Draw left pipe (angled)
+rect(175, 760, 5, 80); // Draw left pipe (angled)
 
   //Chimney
-  rect(70, 600, 15, 40); // Draw chimney base
-  triangle(70, 600, 70, 590, 85, 600); // Draw chimney top
+rect(70, 600, 15, 40); // Draw chimney base
+triangle(70, 600, 70, 590, 85, 600); // Draw chimney top
 
-  //Draw Skyscraper
-  fill(46,6,66); // colour for the skyscraper
-  rect(750, 600, 50, 400); // Draw skyscraper
-  rect(745, 640,20,20,4);
-  rect(745, 700,20,20,4);
-  rect(775, 580,40,20);
-  rect(780, 550,4,30);
+// Draw Skyscraper
+rect(750, 600, 50, 400); // Main body of the skyscraper
+// Windows on the left side of the skyscraper
+rect(745, 640, 20, 20, 4);
+rect(745, 700, 20, 20, 4);
+// Additional decorative elements
+rect(775, 580, 40, 20); // Decorative structure on top
+rect(780, 550, 4, 30); // Vertical detail
   rect(788, 530,5,50);
 
-  //Draw Skyscraper 2
-  fill(46,6,66); 
-  rect(580, 500, 70, 500); 
-  rect(500, 625, 80, 300); 
-  rect(635, 760,20,20,4);
-  rect(635, 820,20,20,4);
-  rect(635, 700,20,20,4);
-  rect(635, 640,20,20,4);
-  rect(635, 580,20,20,4);
-  rect(635, 520,20,20,4);
-  rect(575, 520,20,20,4);
-  rect(495, 760,20,20,4);
-  
-  rect(495, 700,20,20,4);
-  rect(495, 640,20,20,4);
-  rect(635, 580,20,20,4);
-  rect(635, 520,20,20,4);
+  // Draw Skyscraper 2
+rect(580, 500, 70, 500); // Main body of the skyscraper
+rect(500, 625, 80, 300); // Window section on the left side of the skyscraper
+// Windows on the right side of the skyscraper
+rect(635, 760, 20, 20, 4);
+rect(635, 820, 20, 20, 4);
+rect(635, 700, 20, 20, 4);
+rect(635, 640, 20, 20, 4);
+rect(635, 580, 20, 20, 4);
+rect(635, 520, 20, 20, 4);
+rect(575, 520, 20, 20, 4); // Additional windows
+rect(495, 760, 20, 20, 4); 
+rect(495, 700, 20, 20, 4); 
+rect(495, 640, 20, 20, 4); 
 
-  //Draw Skyscraper 3
-  fill(46,6,66); 
-  rect(260, 550, 160, 350);  
-  rect(210, 600, 50, 320); 
-  rect(350, 520, 50, 30); 
+  // Draw Skyscraper 3
+fill(46, 6, 66); // Set fill color to a dark shade
+rect(260, 550, 160, 350); // Main body of the skyscraper
+rect(210, 600, 50, 320); // Window section on the left side of the skyscraper
+rect(350, 520, 50, 30); // Roof structure on the right side of the skyscraper
 
-  rect(315, 510, 5, 40);
-  rect(325, 520, 4, 30);
-  //Rail 1
-  rect(415, 610, 20, 3);
-  rect(435, 610, 3, 18);
-  rect(423, 610, 3, 18);
-  rect(429, 610, 3, 18);
-  rect(415, 620, 20, 8);
-  //Rail 2
-  rect(415, 690, 20, 3);
-  rect(435, 690, 3, 18);
-  rect(423, 690, 3, 18);
-  rect(429, 690, 3, 18);
-  rect(415, 700, 20, 8);
-  //Rail 3
-  rect(415, 770, 20, 3);
-  rect(435, 770, 3, 18);
-  rect(423, 770, 3, 18);
-  rect(429, 770, 3, 18);
-  rect(415, 780, 20, 8);
-  //Rail 1
-  rect(190, 610, 20, 3);
-  rect(190, 610, 3, 18);
-  rect(197, 610, 3, 18);
-  rect(204, 610, 3, 18);
-  rect(190, 620, 20, 8);
-  //Rail 2
-  rect(190, 690, 20, 3);
-  rect(190, 690, 3, 18);
-  rect(197, 690, 3, 18);
-  rect(204, 690, 3, 18);
-  rect(190, 700, 20, 8);
-  //Rail 3
-  rect(190, 770, 20, 3);
-  rect(190, 770, 3, 18);
-  rect(197, 770, 3, 18);
-  rect(204, 770, 3, 18);
-  rect(190, 780, 20, 8);
-  // Add a triangle between the two rectangles
-  fill(46, 6, 66); 
-  triangle(210, 600, 260, 600, 260, 550); 
+// Windows on the left side
+rect(315, 510, 5, 40);
+rect(325, 520, 4, 30);
 
-  //Draw Skyscraper 4
-  fill(46,6,66); 
-  rect(0, 630, 130, 270); 
-  rect(125, 655, 10, 40, 4); 
-  rect(125, 715, 10, 40, 4);
-  rect(125, 775, 10, 40, 4);  
-  rect(15, 610, 40, 30); 
-  rect(18, 580, 5, 30); 
+// Railings on the right side
+// Rail 1
+rect(415, 610, 20, 3);
+rect(435, 610, 3, 18);
+rect(423, 610, 3, 18);
+rect(429, 610, 3, 18);
+rect(415, 620, 20, 8);
+// Rail 2
+rect(415, 690, 20, 3);
+rect(435, 690, 3, 18);
+rect(423, 690, 3, 18);
+rect(429, 690, 3, 18);
+rect(415, 700, 20, 8);
+// Rail 3
+rect(415, 770, 20, 3);
+rect(435, 770, 3, 18);
+rect(423, 770, 3, 18);
+rect(429, 770, 3, 18);
+rect(415, 780, 20, 8);
+
+// Railings on the left side
+// Rail 1
+rect(190, 610, 20, 3);
+rect(190, 610, 3, 18);
+rect(197, 610, 3, 18);
+rect(204, 610, 3, 18);
+rect(190, 620, 20, 8);
+// Rail 2
+rect(190, 690, 20, 3);
+rect(190, 690, 3, 18);
+rect(197, 690, 3, 18);
+rect(204, 690, 3, 18);
+rect(190, 700, 20, 8);
+// Rail 3
+rect(190, 770, 20, 3);
+rect(190, 770, 3, 18);
+rect(197, 770, 3, 18);
+rect(204, 770, 3, 18);
+rect(190, 780, 20, 8);
+
+// Add a triangle between the two rectangles to create a roof structure
+fill(46, 6, 66);
+triangle(210, 600, 260, 600, 260, 550);
+
+  // Draw Skyscraper 4
+  rect(0, 630, 130, 270); // Main body of the skyscraper
+  rect(125, 655, 10, 40, 4); // Windows
+  rect(125, 715, 10, 40, 4); 
+  rect(125, 775, 10, 40, 4); 
+  rect(15, 610, 40, 30); // Structure on top of the skyscraper
+  rect(18, 580, 5, 30); // Structure detail
   rect(38, 585, 5, 30); 
   rect(28, 590, 5, 30); 
   rect(48, 595, 5, 30); 
-  rect(105, 615, 12, 15); 
-  // Draw an ellipse on top of the last rectangle
-  ellipse(105 + 6, 620 - 7.5, 20); 
+  rect(105, 615, 12, 15); // Antenna on top of the skyscraper
+  // Draw an ellipse on top of the last rectangle to represent the antenna's top
+  ellipse(105 + 6, 620 - 7.5, 20);
 
   //Floor
-  fill(46,6,66); 
-  rect(100, 835, 150, 65);  
-  rect(300, 870, 600, 65);  
+  rect(100, 835, 150, 65); // Draw a rectangle representing the floor on the left side
+  rect(300, 870, 600, 65); // Draw a larger rectangle representing the floor on the right side
 }
