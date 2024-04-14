@@ -350,6 +350,24 @@ function draw() {
   rect(0, 680, 800, 6);
   rect(0, 710, 800, 6);
 
+  // Train
+
+  // Roof
+  // fill(216, 191, 216); // Fill colour for the roof
+  // rect(255, 95, 30, 8, 4); // Draw rectangles for the roof of the first carriage
+  // rect(200, 95, 30, 8, 4);
+  // rect(365, 95, 30, 8, 4); // Draw rectangles for the roof of the second carriage
+  // rect(305, 95, 30, 8, 4);
+
+  // Carriages
+  // fill(218, 112, 214); // Fill colour for the carriages
+  // rect(300, 100, 100, 40, 3); // Draw the first carriage
+  // rect(194, 100, 100, 40, 3); // Draw the second carriage
+
+  // Connection
+  // fill(216, 191, 216); // Fill colour for the connection
+  // rect(294, 105, 6, 30); // Draw the connection between the carriages
+
   // Layer 3
   fill(137, 1, 89); // Set colour for all layer 3 assets
 
