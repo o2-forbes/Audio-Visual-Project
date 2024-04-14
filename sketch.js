@@ -2,7 +2,9 @@ let petals = []; // Array function that holds cherry blossom petals
 
 function setup() {
   createCanvas(800, 900);
+}
 
+function draw() {
   // Define the background gradient
   let backgroundGradient = drawingContext.createLinearGradient(0, 0, 0, height);
   backgroundGradient.addColorStop(0, "rgb(220,95,131)"); // Red at the top
@@ -23,7 +25,6 @@ function setup() {
   let glowOpacity = 50; // Initial opacity
   let glowStep = 10; // Opacity decrement for each ellipse
   let glowSizeStep = 20; // Size increment for each ellipse
-  let petals = []; //Array function that holds cherry blossom petals
 
   for (let i = 0; i < 10; i++) {
     // Draw 10 ellipses for glow
@@ -45,27 +46,14 @@ function setup() {
   ellipse(sunX + 50, sunY - 50, sunRadius * 0.8); // Glare ellipse 1
   ellipse(sunX - 30, sunY + 30, sunRadius * 0.5); // Glare ellipse 2
   ellipse(sunX + 70, sunY + 60, sunRadius * 0.6); // Glare ellipse 3
-}
 
-function draw() {
-  let t = frameCount / 100; //updates time
-  // Call functions to draw layers in the desired order
-  drawLayer4();
-  drawLayer3();
-  drawLayer2();
-  drawLayer1();
-}
+  // Layer 1
+  fill(225, 112, 138); // Set colour for all layer 1 assets
 
-// Function to draw the fourth layer
-function drawLayer4() {
-  //Layer 4
-
-  fill(225, 112, 138); // Set colour for all layer 4 assets
-
-  //Draw Skyscraper
+  // Draw Skyscraper
   rect(780, 320, 50, 200); // Draw the skyscraper
 
-  // Draw Skyscraper 2
+  // Draw Skyscraper 1
   // Draw the main rectangular building
   rect(660, 175, 40, 250);
   // Draw the top part of the building
@@ -77,11 +65,11 @@ function drawLayer4() {
   rect(665, 150, 2, 25); // Detail on the left side
   rect(674, 170, 18, 5); // Detail on the left side
 
-  //Draw Skyscraper 2
-  // Draw the main rectangular building
-  rect(623, 285, 30, 200);
+  // Draw Tokyo Tower
+  fill(220, 20, 60); // Set colour for Tokyo Tower
 
   // Draw Skyscraper 3
+  fill(225, 112, 138); // Set colour
   // Draw the main rectangular building
   rect(560, 350, 45, 250);
   // Draw additional structure
@@ -95,10 +83,10 @@ function drawLayer4() {
 
   // Draw Skyscraper 4
   // Draw the main rectangular building
-  rect(460, 295, 35, 250);
+  rect(615, 295, 35, 250);
   // Draw decorative elements
-  rect(480, 291, 12, 4); // Decorative element 1
-  rect(465, 289, 2, 6); // Decorative element 2
+  rect(633, 291, 12, 4); // Decorative element 1
+  rect(620, 289, 2, 6); // Decorative element 2
 
   // Draw Skyscraper 5
   // Draw a rectangular skyscraper
@@ -135,24 +123,20 @@ function drawLayer4() {
   rect(75, 188, 2, 42); // Detail 2
   rect(95, 222, 2, 22); // Detail 3
 
-  //Draw Skyscraper 9
+  // Draw Skyscraper 9
   // Draw circular top
   ellipse(5, 275, 35, 30);
   // Draw rectangular base
   rect(0, 275, 50, 500);
   // Draw detail on the side of the building
   rect(40, 260, 2, 22);
-}
 
-// Function to draw the third layer
-function drawLayer3() {
-  //Layer 3
+  // Layer 2
+  fill(228, 90, 143); // Set colour for all layer 2 assets
 
-  fill(228, 90, 143); // Set colour for all layer 3 assets
+  // Details
 
-  //Details
-
-  //Box
+  // Box
   // Draw the top layer of the box
   rect(465, 428, 35, 7); // Draw the top rectangle
 
@@ -162,7 +146,7 @@ function drawLayer3() {
   // Draw the bottom layer of the box
   rect(475, 414, 15, 7); // Draw the bottom rectangle
 
-  //Cables
+  // Cables
   // Draw horizontal cable segments
   rect(590, 430, 55, 5);
   rect(590, 438, 55, 3);
@@ -176,7 +160,7 @@ function drawLayer3() {
   rect(607, 447, 3, 23);
   rect(615, 447, 3, 23);
 
-  //Cables
+  // Cables
   // Draw vertical cable segments
   rect(240, 460, 40, 3);
   rect(240, 445, 40, 3);
@@ -204,7 +188,7 @@ function drawLayer3() {
   rect(245, 410, 3, 18);
   rect(240, 410, 3, 18);
 
-  //Ladder
+  // Ladder
   rect(141, 300, 3, 200); // Draw the main vertical bar of the ladder
   noFill(); // No fill for subsequent shapes
   stroke(228, 90, 143); // Set stroke colour to a shade of pink
@@ -212,7 +196,7 @@ function drawLayer3() {
   line(143, 300, 165, 272); // Draw diagonal support line for the ladder
   fill(228, 90, 143); // Set fill colour to the same shade of pink
   noStroke(); // No stroke for subsequent shapes
-  //Draw ladder steps
+  // Draw ladder steps
   rect(141, 314, 10, 3);
   rect(141, 330, 10, 3);
   rect(141, 346, 10, 3);
@@ -225,17 +209,17 @@ function drawLayer3() {
   rect(141, 458, 10, 3);
   rect(141, 474, 10, 3);
 
-  //Outlet
-  //Draw outlet bars
+  // Outlet
+  // Draw outlet bars
   rect(77, 387, 3, 30); // Draw first outlet bar
   rect(85, 375, 3, 15); // Draw second outlet bar
   rect(77, 387, 8, 3); // Draw third outlet bar
   rect(90, 360, 3, 40); // Draw fourth outlet bar
 
-  //Draw Skyscraper
+  // Draw Skyscraper
   rect(775, 500, 50, 400); // Draw main body of the skyscraper
 
-  //Draw Skyscraper 2
+  // Draw Skyscraper 2
   rect(620, 395, 45, 380); // Draw main body of the skyscraper
 
   // Draw additional details
@@ -245,7 +229,7 @@ function drawLayer3() {
   rect(633, 383, 3, 8);
   rect(627, 370, 3, 8);
 
-  //Draw Skyscraper 3
+  // Draw Skyscraper 3
   rect(455, 435, 100, 380); // Draw main body of the skyscraper
 
   // Draw additional details
@@ -253,7 +237,7 @@ function drawLayer3() {
   rect(530, 428, 12, 3);
   rect(520, 419, 2, 12);
 
-  //Draw Skyscraper 4
+  // Draw Skyscraper 4
   rect(370, 350, 55, 380); // Draw main body of the skyscraper
   ellipse(397.5, 360, 50, 45); // Draw rounded top of the skyscraper
 
@@ -271,7 +255,7 @@ function drawLayer3() {
   rect(421, 440, 6, 6, 4); // Draw detail on the right side
   rect(421, 450, 6, 6, 4); // Draw detail on the right side
 
-  //Draw Skyscraper 5
+  // Draw Skyscraper 5
   rect(270, 410, 60, 380); // Draw main body of the skyscraper
   rect(330, 430, 15, 380); // Draw right side details
   triangle(330, 410, 330, 430, 345, 430);
@@ -282,7 +266,7 @@ function drawLayer3() {
   rect(288, 406, 10, 4);
   rect(274, 401, 10, 9);
 
-  //Draw Skyscraper 6
+  // Draw Skyscraper 6
   rect(165, 270, 75, 380); // Draw main body of the skyscraper
   rect(150, 290, 15, 380); // Draw left side detail
   triangle(165, 270, 150, 290, 165, 290); // Draw left side detail
@@ -299,7 +283,7 @@ function drawLayer3() {
   rect(204, 265, 4, 6);
   rect(204, 250, 4, 6);
 
-  //Draw Skyscraper 7
+  // Draw Skyscraper 7
   rect(35, 400, 80, 380); // Draw main body of the skyscraper
 
   // Draw left side details
@@ -314,15 +298,12 @@ function drawLayer3() {
   // Draw additional details
   rect(100, 394, 6, 6); // Draw additional detail
   rect(45, 390, 20, 10); // Draw additional detail
-}
 
-// Function to draw the second layer
-function drawLayer2() {
-  //Layer 2
+  // Layer 2 - Train Tracks
 
-  //Details
+  // Details
 
-  //Train Tracks
+  // Train Tracks
   fill(220, 20, 60); // Set colour for the train tracks
 
   // Draw main track
@@ -353,8 +334,10 @@ function drawLayer2() {
   rect(0, 680, 800, 6);
   rect(0, 710, 800, 6);
 
-  //Tank
-  fill(137, 1, 89); // Set colour for all layer 2 assets
+  // Layer 3
+  fill(137, 1, 89); // Set colour for all layer 3 assets
+
+  // Tank
 
   // Draw tank body
   rect(65, 570, 23, 23, 5); // Draw tank body
@@ -365,13 +348,13 @@ function drawLayer2() {
   rect(40, 575, 100, 3, 5); // Draw top pipe
   rect(40, 585, 100, 3, 5); // Draw bottom pipe
 
-  //Billboard
+  // Billboard
   // Draw billboard
   rect(680, 400, 3, 30); // Draw left stand of the billboard
   rect(710, 400, 3, 30); // Draw right stand of the billboard
   rect(673, 377, 45, 23, 5); // Draw main billboard area
 
-  //Outlet
+  // Outlet
   // Draw outlet bars
   rect(750, 415, 20, 5);
   rect(750, 425, 24, 5);
@@ -381,7 +364,7 @@ function drawLayer2() {
   rect(440, 495, 10, 15); // Draw outlet base
   rect(450, 495, 6, 25); // Draw outlet pipe
 
-  //Ruins
+  // Ruins
   // Draw ruins structures
   rect(385, 440, 3, 40); // Draw vertical details
   rect(395, 425, 3, 60);
@@ -390,7 +373,7 @@ function drawLayer2() {
   rect(385, 465, 10, 3);
   rect(385, 475, 10, 3);
 
-  //Ladder
+  // Ladder
   // Draw ladder steps
   for (let y = 440; y <= 710; y += 10) {
     rect(657, y, 15, 4, 5); // Draw each step of the ladder
@@ -398,7 +381,7 @@ function drawLayer2() {
   // Draw ladder sides
   rect(655, 440, 3, 274, 5); // Draw the sides of the ladder
 
-  //Pipes
+  // Pipes
   // Draw pipe segments
   rect(486, 575, 3, 92, 5); // Draw vertical segment
   rect(481, 679, 3, 30, 5); // Draw vertical segment
@@ -475,20 +458,17 @@ function drawLayer2() {
   rect(26, 508, 3, 20); // Draw bottom left detail
   rect(40, 525, 3, 15); // Draw top right detail
 
-  //Floor
+  // Floor
   fill(137, 1, 89); // Set fill color to a shade of purple
   rect(300, 740, 600, 150); // Draw the floor rectangle
-}
 
-// Function to draw the first layer
-function drawLayer1() {
-  //Layer 1
+  // Layer 4
 
-  fill(46, 6, 66); // Set colour for all layer 1 assets
+  fill(46, 6, 66); // Set colour for all layer 4 assets
 
-  //Details
+  // Details
 
-  //Billboard
+  // Billboard
   // Draw the main billboard structure
   rect(680, 840, 5, 30); // Draw left edge of the billboard
   rect(708, 840, 5, 30); // Draw right edge of the billboard
@@ -499,7 +479,7 @@ function drawLayer1() {
   rect(708, 800, 5, 30); // Draw right edge of the lower billboard
   rect(673, 790, 45, 23, 5); // Draw lower billboard body
 
-  //Ladder
+  // Ladder
   rect(730, 745, 5, 200); // Draw ladder post
   rect(735, 745, 20, 5); // Draw ladder steps
   rect(735, 755, 20, 5);
@@ -508,7 +488,7 @@ function drawLayer1() {
   rect(735, 785, 20, 5);
   rect(735, 795, 20, 5);
 
-  //Tank
+  // Tank
   rect(750, 565, 20, 15); // Draw tank base
   rect(746, 560, 27, 5); // Draw tank top
   rect(746, 580, 27, 5);
@@ -516,7 +496,7 @@ function drawLayer1() {
   rect(759, 580, 3, 25);
   rect(766, 580, 3, 25);
 
-  //Water Pump
+  // Water Pump
   rect(520, 580, 20, 25, 3); // Draw water pump base
   rect(518, 576, 24, 5, 3); // Draw water pump top
   rect(524, 576, 3, 50); // Draw water pump body
@@ -526,20 +506,20 @@ function drawLayer1() {
   rect(511, 590, 3, 12, 5); // Draw left part of the handle
   rect(514, 590, 10, 3, 5); // Draw right part of the handle
 
-  //Pipes
+  // Pipes
   // Draw pipe segments
   rect(565, 600, 3, 32, 5); // Draw left vertical segment
   rect(565, 600, 18, 3, 5); // Draw left horizontal segment
   rect(572, 610, 3, 32, 5); // Draw right vertical segment
   rect(572, 610, 12, 3, 5); // Draw right horizontal segment
 
-  //Clothes line
+  // Clothes line
   stroke(46, 6, 66); // Set color for the clothes line
   line(120, 680, 220, 660); // Draw left clothes line
   line(820, 700, 620, 680); // Draw right clothes line
   noStroke(); // Reset stroke style to remove the stroke from subsequent shapes
 
-  //Chimney
+  // Chimney
   rect(615, 470, 5, 30); // Draw left part of chimney base
   rect(630, 470, 5, 30); // Draw right part of chimney base
 
@@ -552,7 +532,7 @@ function drawLayer1() {
   rect(595, 495, 7, 7); // Draw middle side of the chimney
   rect(605, 495, 7, 7); // Draw right side of the chimney
 
-  //Rails
+  // Rails
   rect(400, 810, 200, 5); // Draw upper rail
   rect(400, 830, 200, 5); // Draw middle rail
   rect(400, 850, 200, 5); // Draw lower rail
@@ -571,14 +551,14 @@ function drawLayer1() {
   rect(460, 850, 5, 20);
   rect(480, 850, 5, 20);
 
-  //Pipes
+  // Pipes
   rect(140, 810, 60, 5); // Draw left pipe (horizontal)
   rect(140, 810, 5, 50); // Draw left pipe (vertical)
   rect(200, 810, 5, 50); // Draw right pipe (vertical)
   rect(155, 790, 5, 50); // Draw left pipe (angled)
   rect(175, 760, 5, 80); // Draw left pipe (angled)
 
-  //Chimney
+  // Chimney
   rect(70, 600, 15, 40); // Draw chimney base
   triangle(70, 600, 70, 590, 85, 600); // Draw chimney top
 
@@ -673,7 +653,49 @@ function drawLayer1() {
   // Draw an ellipse on top of the last rectangle to represent the antenna's top
   ellipse(105 + 6, 620 - 7.5, 20);
 
-  //Floor
+  // Floor
   rect(100, 835, 150, 65); // Draw a rectangle representing the floor on the left side
   rect(300, 870, 600, 65); // Draw a larger rectangle representing the floor on the right side
+
+  // Cherry Blossom
+  fill(255, 183, 197);
+  noStroke();
+  let t = frameCount / 100; // Updates time
+
+  for (var i = 0; i < 1; i++) {
+    petals.push(new petal()); // Append petal object
+  } // Random number of petals each frame
+
+  // Loop through petals
+  for (let blossom of petals) {
+    blossom.update(t); // Update petal position
+    blossom.display(); // Draw petal
+  }
+}
+
+// Petal class
+function petal() {
+  // Initialise coordinates
+  this.posX = 0;
+  this.posY = random(-50, 0);
+  this.initialangle = random(10, 0 * PI);
+  this.size = random(3.5, 7);
+
+  this.radius = sqrt(random(pow(width / 1, 2)));
+  this.update = function (time) {
+    // X position follows a circle
+    let w = 0.1; // Angular speed
+    let angle = w * time + this.initialangle;
+    this.posX = width / 1 + this.radius * tan(angle); // Calculates tangent of the angle the petals fall
+    this.posY += pow(this.size, 0.5);
+
+    // Delete petal if past end of screen
+    if (this.posY > height) {
+      let index = petals.indexOf(this);
+      petals.splice(index, 1);
+    }
+  };
+  this.display = function () {
+    ellipse(this.posX, this.posY, this.size);
+  };
 }
