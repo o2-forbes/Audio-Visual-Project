@@ -48,7 +48,7 @@ function draw() {
   ellipse(sunX + 70, sunY + 60, sunRadius * 0.6); // Glare ellipse 3
 
   // Layer 1
-  fill(225, 112, 138); // Set colour for all layer 1 assets
+  fill(220, 108, 134); // Set colour for all layer 1 assets
 
   // Draw Skyscraper
   rect(780, 320, 50, 200); // Draw the skyscraper
@@ -65,8 +65,24 @@ function draw() {
   rect(665, 150, 2, 25); // Detail on the left side
   rect(674, 170, 18, 5); // Detail on the left side
 
-  // Draw Tokyo Tower
-  fill(220, 20, 60); // Set colour for Tokyo Tower
+  // Draw Tokyo Skytree
+  fill(222, 49, 99); // Set fill colour
+  quad(485, 350, 505, 350, 510, 440, 480, 440); // Draw the main structure
+  quad(470, 325, 520, 325, 515, 350, 475, 350); // Draw the top part
+  stroke(222, 49, 99); // Set stroke coluor
+  strokeWeight(5); // Set stroke weight
+  line(476, 340, 450, 600); // Draw the left support
+  line(514, 340, 535, 600); // Draw the right support
+  noStroke(); // Reset stroke
+  rect(467, 318, 55, 7, 10); // Draw the horizontal line at the top
+  rect(481, 273, 28, 45); // Draw the first horizontal rectangle
+  rect(467, 266, 55, 7, 10); // Draw the second horizontal line
+  rect(473, 259, 43, 7); // Draw the third horizontal line
+  rect(482, 225, 25, 35, 3); // Draw the first rectangle in the middle
+  rect(490, 201, 10, 25, 3); // Draw the second rectangle in the middle
+  rect(486, 107, 18, 95, 3); // Draw the bottom rectangle
+  rect(482, 98, 26, 10, 3); // Draw the bottom line
+  quad(482, 98, 508, 98, 512, 90, 478, 90); // Draw the bottom arc
 
   // Draw Skyscraper 3
   fill(225, 112, 138); // Set colour
@@ -132,7 +148,7 @@ function draw() {
   rect(40, 260, 2, 22);
 
   // Layer 2
-  fill(228, 90, 143); // Set colour for all layer 2 assets
+  fill(214, 80, 131); // Set colour for all layer 2 assets
 
   // Details
 
@@ -194,7 +210,7 @@ function draw() {
   stroke(228, 90, 143); // Set stroke colour to a shade of pink
   strokeWeight(3); // Set stroke weight to 3 pixels
   line(143, 300, 165, 272); // Draw diagonal support line for the ladder
-  fill(228, 90, 143); // Set fill colour to the same shade of pink
+  fill(214, 80, 131); // Set fill colour to the same shade of pink
   noStroke(); // No stroke for subsequent shapes
   // Draw ladder steps
   rect(141, 314, 10, 3);
@@ -235,7 +251,7 @@ function draw() {
   // Draw additional details
   rect(515, 431, 30, 4);
   rect(530, 428, 12, 3);
-  rect(520, 419, 2, 12);
+  rect(525, 419, 2, 12);
 
   // Draw Skyscraper 4
   rect(370, 350, 55, 380); // Draw main body of the skyscraper
@@ -304,7 +320,7 @@ function draw() {
   // Details
 
   // Train Tracks
-  fill(220, 20, 60); // Set colour for the train tracks
+  fill(224, 17, 95); // Set colour for the train tracks
 
   // Draw main track
   rect(0, 525, width, 15); // Draw main track
@@ -699,3 +715,6 @@ function petal() {
     ellipse(this.posX, this.posY, this.size);
   };
 }
+
+// References:
+// https://editor.p5js.org/abrock/sketches/SyyaEusom
