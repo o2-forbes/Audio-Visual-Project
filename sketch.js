@@ -56,8 +56,9 @@ function draw() {
 function drawLayer4() {
   //Layer 4
 
-  //Draw Skyscraper
   fill(225, 112, 138); // Set colour for all layer 4 assets
+
+  //Draw Skyscraper
   rect(780, 320, 50, 200); // Draw the skyscraper
 
   // Draw Skyscraper 2
@@ -143,11 +144,12 @@ function drawLayer4() {
 function drawLayer3() {
   //Layer 3
 
+  fill(228, 90, 143); // Set colour for all layer 3 assets
+
   //Details
 
   //Box
   // Draw the top layer of the box
-  fill(228, 90, 143); // Set colour for all layer 3 assets
   rect(465, 428, 35, 7); // Draw the top rectangle
 
   // Draw the middle layer of the box
@@ -348,7 +350,7 @@ function drawLayer2() {
   rect(0, 710, 800, 6);
 
   //Tank
-  fill(137, 1, 89); // Set colour
+  fill(137, 1, 89); // Set colour for all layer 2 assets
 
   // Draw tank body
   rect(65, 570, 23, 23, 5); // Draw tank body
@@ -360,8 +362,6 @@ function drawLayer2() {
   rect(40, 585, 100, 3, 5); // Draw bottom pipe
 
   //Billboard
-  fill(137, 1, 89); // Set colour for all layer 2 assets
-
   // Draw billboard
   rect(680, 400, 3, 30); // Draw left stand of the billboard
   rect(710, 400, 3, 30); // Draw right stand of the billboard
@@ -480,11 +480,11 @@ function drawLayer2() {
 function drawLayer1() {
   //Layer 1
 
+  fill(46, 6, 66); // Set colour for all layer 1 assets
+
   //Details
 
   //Billboard
-  fill(46, 6, 66); // Set colour for all layer 1 assets
-
   // Draw the main billboard structure
   rect(680, 840, 5, 30); // Draw left edge of the billboard
   rect(708, 840, 5, 30); // Draw right edge of the billboard
@@ -604,7 +604,6 @@ function drawLayer1() {
   rect(495, 640, 20, 20, 4);
 
   // Draw Skyscraper 3
-  fill(46, 6, 66); // Set fill color to a dark shade
   rect(260, 550, 160, 350); // Main body of the skyscraper
   rect(210, 600, 50, 320); // Window section on the left side of the skyscraper
   rect(350, 520, 50, 30); // Roof structure on the right side of the skyscraper
@@ -654,7 +653,6 @@ function drawLayer1() {
   rect(190, 780, 20, 8);
 
   // Add a triangle between the two rectangles to create a roof structure
-  fill(46, 6, 66);
   triangle(210, 600, 260, 600, 260, 550);
 
   // Draw Skyscraper 4
