@@ -37,7 +37,7 @@ function Cloud() {
     ellipse(this.x + 10, this.y + 10, 24, 24);
     ellipse(this.x + 30, this.y + 10, 24, 24);
     ellipse(this.x + 30, this.y - 10, 24, 24);
-    ellipse(this.x + 20, this.y - 10, 24, 24);
+    ellipse(this.x + 15, this.y - 10, 24, 24);
     ellipse(this.x + 40, this.y, 24, 24);
 
     // Disable stroke for subsequent shapes
@@ -202,7 +202,7 @@ function draw() {
   // Draw detail on the side of the building
   rect(40, 260, 2, 22);
 
-  // clouds
+  // Clouds
   for (let n = 0; n < clouds.length; n = n + 1) {
     // Loop through each cloud object in the array
 
@@ -795,6 +795,8 @@ function petal() {
       petals.splice(index, 1);
     }
   };
+
+  // Method to display the petal on the canvas
   this.display = function () {
     ellipse(this.posX, this.posY, this.size);
   };
