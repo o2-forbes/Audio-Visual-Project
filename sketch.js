@@ -1,7 +1,62 @@
 let petals = []; // Array function that holds cherry blossom petals
+let clouds = []; // Array function that holds clouds
 
 function setup() {
   createCanvas(800, 900);
+
+  for (let n = 0; n < 6; n = n + 1) {
+    // Loop runs four times, creating four cloud objects
+
+    // Create a new Cloud object and assign it to the nth index of the clouds array
+    clouds[n] = new Cloud();
+  }
+}
+
+function Cloud() {
+  // The constructor function for creating Cloud objects
+
+  // Initialize the x-coordinate of the cloud to a random value between 0 and the width of the canvas
+  this.x = random(0, width);
+
+  // Initialize the y-coordinate of the cloud to a random value between 20 and 400
+  this.y = random(20, 400);
+
+  // Display method to draw the cloud on the canvas
+  this.display = function () {
+    // Set stroke colour to white
+    stroke(255);
+
+    // Set stroke weight to 1
+    strokeWeight(1);
+
+    // Set fill colour to white
+    fill(255);
+
+    // Draw multiple ellipses to represent the cloud
+    ellipse(this.x, this.y, 24, 24);
+    ellipse(this.x + 10, this.y + 10, 24, 24);
+    ellipse(this.x + 30, this.y + 10, 24, 24);
+    ellipse(this.x + 30, this.y - 10, 24, 24);
+    ellipse(this.x + 20, this.y - 10, 24, 24);
+    ellipse(this.x + 40, this.y, 24, 24);
+
+    // Disable stroke for subsequent shapes
+    noStroke();
+  };
+
+  // Move method to update the cloud's position
+  this.move = function () {
+    // Increment the x-coordinate of the cloud by 0.5 units
+    this.x += 0.5;
+
+    // Update the y-coordinate of the cloud by adding a small random value
+    this.y += random(-0.5, 0.5);
+
+    // If the cloud moves beyond the width of the canvas, reset its x-coordinate to 0
+    if (this.x >= width) {
+      this.x = 0;
+    }
+  };
 }
 
 function draw() {
@@ -146,6 +201,17 @@ function draw() {
   rect(0, 275, 50, 500);
   // Draw detail on the side of the building
   rect(40, 260, 2, 22);
+
+  // clouds
+  for (let n = 0; n < clouds.length; n = n + 1) {
+    // Loop through each cloud object in the array
+
+    // Move the cloud according to its move() method
+    clouds[n].move();
+
+    // Display the cloud using its display() method
+    clouds[n].display();
+  }
 
   // Layer 2
   fill(214, 80, 131); // Set colour for all layer 2 assets
