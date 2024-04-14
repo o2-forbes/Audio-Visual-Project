@@ -1,3 +1,5 @@
+let petals = []; // Array function that holds cherry blossom petals
+
 function setup() {
   createCanvas(800, 900);
 
@@ -21,6 +23,7 @@ function setup() {
   let glowOpacity = 50; // Initial opacity
   let glowStep = 10; // Opacity decrement for each ellipse
   let glowSizeStep = 20; // Size increment for each ellipse
+  let petals = []; //Array function that holds cherry blossom petals
 
   for (let i = 0; i < 10; i++) {
     // Draw 10 ellipses for glow
@@ -45,6 +48,7 @@ function setup() {
 }
 
 function draw() {
+  let t = frameCount / 100; //updates time
   // Call functions to draw layers in the desired order
   drawLayer4();
   drawLayer3();
