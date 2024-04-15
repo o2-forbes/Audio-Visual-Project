@@ -32,13 +32,11 @@ function Cloud() {
     // Set fill colour to white
     fill(255);
 
-    // Draw multiple ellipses to represent the cloud
-    ellipse(this.x, this.y, 24, 24);
-    ellipse(this.x + 10, this.y + 10, 24, 24);
-    ellipse(this.x + 30, this.y + 10, 24, 24);
-    ellipse(this.x + 30, this.y - 10, 24, 24);
-    ellipse(this.x + 15, this.y - 10, 24, 24);
-    ellipse(this.x + 40, this.y, 24, 24);
+    // Draw multiple rectangles with curved edges to represent the cloud
+    rect(this.x - 10, this.y, 80, 20, 10);
+    rect(this.x, this.y + 25, 80, 20, 10);
+    rect(this.x + 30, this.y + 10, 80, 20, 10);
+    rect(this.x + 10, this.y - 10, 80, 20, 10);
 
     // Disable stroke for subsequent shapes
     noStroke();
@@ -47,10 +45,10 @@ function Cloud() {
   // Move method to update the cloud's position
   this.move = function () {
     // Increment the x-coordinate of the cloud by 0.5 units
-    this.x += 0.5;
+    this.x += 0.25;
 
     // Update the y-coordinate of the cloud by adding a small random value
-    this.y += random(-0.5, 0.5);
+    this.y += random(-0.25, 0.25);
 
     // If the cloud moves beyond the width of the canvas, reset its x-coordinate to 0
     if (this.x >= width) {
