@@ -802,3 +802,5 @@ function petal() {
 
 // References:
 // https://editor.p5js.org/abrock/sketches/SyyaEusom
+// https://www.youtube.com/watch?app=desktop&v=SN9n2c37ZEQ
+// https://www.reddit.com/r/DigitalArt/comments/l8h8p1/city_skyline/
