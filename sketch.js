@@ -811,6 +811,12 @@ function draw() {
     rect(0, 0, width, height); // Draw background rectangle
 
     // Set up moon
+    beginShape();
+    fill(0);
+    vertex(width - 60, 40); // Invert the x-coordinate of the starting vertex and adjust position
+    bezierVertex(width - 120, 0, width - 160, 150, width - 60, 170); // Invert x-coordinates of control points and adjust position
+    bezierVertex(width - 100, 160, width - 120, 50, width - 60, 40); // Invert x-coordinates of control points and adjust position
+    endShape();
 
     // Layer 1
     fill(102, 135, 215); // Set colour for all layer 1 assets
