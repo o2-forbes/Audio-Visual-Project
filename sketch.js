@@ -30,13 +30,15 @@ function setup() {
   // - Initial value: 1
   // - Step size: 0.01
   sliderRate = createSlider(0, 2, 1, 0.01);
+  sliderRate.position(600, 75);
 
   // Create a slider element to control the panning with the following parameters:
   // - Minimum value: -1
   // - Maximum value: 1
   // - Initial value: 0.5
   // - Step size: 0.01
-  sliderPan = createSlider(-1, 1, 0.5, 0.01);
+  sliderPan = createSlider(-1, 1, 0, 0.01);
+  sliderPan.position(1200, 75);
 
   // Loop the loaded sound
   song1.loop();
