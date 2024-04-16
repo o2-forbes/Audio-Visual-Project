@@ -819,13 +819,38 @@ function draw() {
     drawingContext.fillStyle = backgroundGradient;
     rect(0, 0, width, height); // Draw background rectangle
 
-    // Set up moon
-    beginShape();
-    fill(0);
-    vertex(width - 60, 40); // Invert the x-coordinate of the starting vertex and adjust position
-    bezierVertex(width - 120, 0, width - 160, 150, width - 60, 170); // Invert x-coordinates of control points and adjust position
-    bezierVertex(width - 100, 160, width - 120, 50, width - 60, 40); // Invert x-coordinates of control points and adjust position
-    endShape();
+    // Set up sun
+    let sunX = width / 2;
+    let sunY = 200;
+    let sunRadius = 175;
+    let glowRadius = sunRadius * 3;
+
+    // Draw sun glow
+    noStroke();
+    let glowOpacity = 50; // Initial opacity
+    let glowStep = 10; // Opacity decrement for each ellipse
+    let glowSizeStep = 20; // Size increment for each ellipse
+
+    for (let i = 0; i < 10; i++) {
+      // Draw 10 ellipses for glow
+      fill(255, 250, 240, glowOpacity);
+      ellipse(sunX, sunY, glowRadius); // Draw ellipse
+      glowOpacity -= glowStep; // Decrease opacity for next ellipse
+      glowRadius += glowSizeStep; // Increase size for next ellipse
+    }
+
+    // Draw sun with glare
+    strokeWeight(2);
+    stroke(255, 250, 205);
+    fill(255, 250, 240); // Yellow colour for the sun
+    ellipse(sunX, sunY, sunRadius * 2); // Draw sun
+    noStroke();
+
+    // Add glare effect
+    fill(255, 255, 200, 100); // Glare colour with transparency
+    ellipse(sunX + 50, sunY - 50, sunRadius * 0.8); // Glare ellipse 1
+    ellipse(sunX - 30, sunY + 30, sunRadius * 0.5); // Glare ellipse 2
+    ellipse(sunX + 70, sunY + 60, sunRadius * 0.6); // Glare ellipse 3
 
     // Stars
 
@@ -937,6 +962,42 @@ function draw() {
     rect(0, 275, 50, 500);
     // Draw detail on the side of the building
     rect(40, 260, 2, 22);
+
+    // Lights
+    fill(225, 207, 138);
+    // Building 1
+    ellipse(675, 200, 5, 5);
+    ellipse(685, 250, 5, 5);
+    ellipse(670, 300, 5, 5);
+    ellipse(695, 300, 5, 5);
+    ellipse(720, 300, 5, 5);
+    ellipse(710, 350, 5, 5);
+    ellipse(680, 350, 5, 5);
+    ellipse(695, 400, 5, 5);
+    ellipse(725, 380, 5, 5);
+
+    // Building 2
+    rect(640, 305, 3, 5, 2);
+    rect(620, 325, 3, 5, 2);
+    rect(642, 335, 3, 5, 2);
+    rect(633, 335, 3, 5, 2);
+    rect(627, 335, 3, 5, 2);
+    rect(620, 360, 3, 5, 2);
+    rect(630, 360, 3, 5, 2);
+    rect(640, 370, 3, 5, 2);
+    rect(625, 385, 3, 5, 2);
+
+    // Building 3
+    ellipse(565, 375, 5, 5);
+
+    // Building 4
+    rect(355, 420, 3, 5, 2);
+    rect(315, 375, 3, 5, 2);
+    rect(315, 315, 3, 5, 2);
+    rect(315, 245, 3, 5, 2);
+    rect(345, 285, 3, 5, 2);
+    rect(340, 335, 3, 5, 2);
+    rect(350, 360, 3, 5, 2);
 
     // Clouds
     for (let n = 0; n < clouds.length; n = n + 1) {
@@ -1598,5 +1659,6 @@ class Star {
 // References:
 // https://editor.p5js.org/abrock/sketches/SyyaEusom
 // https://editor.p5js.org/kelsierose94/sketches/MU2Y21aG0
+// https://editor.p5js.org/wvnl/sketches/5wnuHAXKd
 // https://www.youtube.com/watch?app=desktop&v=SN9n2c37ZEQ
 // https://www.reddit.com/r/DigitalArt/comments/l8h8p1/city_skyline/
