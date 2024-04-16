@@ -965,6 +965,8 @@ function draw() {
 
     // Lights
     fill(225, 207, 138);
+
+    // Layer 1
     // Building 1
     ellipse(675, 200, 5, 5);
     ellipse(685, 250, 5, 5);
@@ -998,6 +1000,15 @@ function draw() {
     rect(345, 285, 3, 5, 2);
     rect(340, 335, 3, 5, 2);
     rect(350, 360, 3, 5, 2);
+
+    // Building 5
+    ellipse(83, 267, 5, 5);
+    ellipse(83, 317, 5, 5);
+    ellipse(83, 367, 5, 5);
+    ellipse(113, 357, 5, 5);
+
+    //Layer 2
+    //Building 1
 
     // Clouds
     for (let n = 0; n < clouds.length; n = n + 1) {
