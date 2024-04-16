@@ -20,6 +20,7 @@ function preload() {
 function setup() {
   // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
+
   // Set the volume of song1 to 0.5 (half of the maximum volume)
   song1.setVolume(0.5);
 
