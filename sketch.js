@@ -1,6 +1,7 @@
 let petals = []; // Array function that holds cherry blossom petals
 let clouds = []; // Array function that holds clouds
-let train = []; // Array function that holds train
+let cloudx = 100; // Declare a variable 'cloudx' and initialize it with a value of 100
+let cloudy = 100; // Declare a variable 'cloudy' and initialize it with a value of 100
 let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
@@ -18,7 +19,7 @@ function setup() {
   }
 
   // Clouds
-  for (let n = 0; n < 6; n = n + 1) {
+  for (let n = 0; n < 4; n = n + 1) {
     // Loop runs four times, creating four cloud objects
 
     // Create a new Cloud object and assign it to the nth index of the clouds array
@@ -89,6 +90,17 @@ function Cloud() {
       this.x = 0;
     }
   };
+}
+
+function makeCloud(cloudx, cloudy) {
+  // Set fill colour to a light shade (RGB 250,250,250)
+  fill(246, 246, 246);
+  // Turn off stroke (no outline)
+  noStroke();
+  // Draw ellipses to create the cloud shape
+  ellipse(cloudx, cloudy, 70, 50); // Main ellipse
+  ellipse(cloudx + 10, cloudy + 10, 70, 50); // Ellipse slightly shifted to the right and down
+  ellipse(cloudx - 20, cloudy + 10, 70, 50); // Ellipse slightly shifted to the left and down
 }
 
 function draw() {
@@ -250,6 +262,18 @@ function draw() {
       // Display the cloud using its display() method
       clouds[n].display();
     }
+
+    // Draw a cloud slightly above the original position
+    makeCloud(cloudx, cloudy - 50);
+
+    // Draw a cloud shifted to the right and downwards from the original position
+    makeCloud(cloudx + 100, cloudy + 100);
+
+    // Draw a cloud at a position shifted to the left and downwards from the original position
+    makeCloud(cloudx - 50, cloudy + 250);
+
+    // Increment the horizontal position of the clouds by 0.1 units
+    cloudx += 0.1;
 
     // Layer 2
     fill(214, 80, 131); // Set colour for all layer 2 assets
@@ -1026,6 +1050,15 @@ function draw() {
       // Display the cloud using its display() method
       clouds[n].display();
     }
+
+    // Draw a cloud slightly above the original position
+    makeCloud(cloudx, cloudy - 50);
+
+    // Draw a cloud shifted to the right and downwards from the original position
+    makeCloud(cloudx + 100, cloudy + 100);
+
+    // Increment the horizontal position of the clouds by 0.1 units
+    cloudx += 0.1;
 
     // Layer 2
     fill(70, 130, 180); // Set colour for all layer 2 assets
