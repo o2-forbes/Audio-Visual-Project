@@ -5,10 +5,22 @@ let cloudy = 100; // Declare a variable 'cloudy' and initialise it with a value 
 let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
+var song1; // Declare a variable named 'song' to be used for storing a reference to a sound file
+var song2; // Declare a variable named 'song' to be used for storing a reference to a sound file
+
+// Preload function to load the sound file before the sketch starts
+function preload() {
+  // Load the sound files and assign it to the appropriate 'song' variable
+  song1 = loadSound("Rainy Village Royalty Free 8 Bit Lofi Hip Hop.mp3");
+  song2 = loadSound("Arukas Bloom Royalty Free 8 Bit Lofi Hip Hop.mp3");
+}
 
 function setup() {
   // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
+  // Play the loaded sound
+  song2.play();
+  song2.setVolume(0.3);
 
   // Stars
   for (var s = 0; s < 1000; s++) {
