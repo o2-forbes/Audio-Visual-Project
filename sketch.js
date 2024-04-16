@@ -10,12 +10,25 @@ var song1; // Declare a variable named 'song' to be used for storing a reference
 var sliderVolume; // Declare a variable named 'sliderVolume'
 var sliderRate; // Declare a variable named 'sliderRate'
 var sliderPan; // Declare a variable named 'sliderPan'
+var button; // Declare a variable named 'button'
 
 // Preload function to load the sound file before the sketch starts
 function preload() {
   // Load the sound files and assign it to the appropriate 'song' variable
   song1 = loadSound("Arukas Bloom Royalty Free 8 Bit Lofi Hip Hop.mp3");
   // song2 = loadSound("Rainy Village Royalty Free 8 Bit Lofi Hip Hop.mp3");
+
+  // Create a button element with the label "play"
+  button = createButton("play");
+
+  // Call the togglePlaying function when the button is pressed
+  button.mousePressed(togglePlaying);
+}
+
+// Define a function named togglePlaying
+function togglePlaying() {
+  // Start playing song1 in a loop (repeating playback)
+  song1.loop();
 }
 
 function setup() {
@@ -48,9 +61,6 @@ function setup() {
   sliderPan = createSlider(-1, 1, 0, 0.01);
   // Set the position of the sliderPan element to (1200, 75) on the canvas
   sliderPan.position(1200, 75);
-
-  // Loop the loaded sound
-  song1.loop();
 
   // Stars
   for (var s = 0; s < 1000; s++) {
