@@ -17,6 +17,7 @@ function setup() {
     stars[s] = new Star();
   }
 
+  // Clouds
   for (let n = 0; n < 6; n = n + 1) {
     // Loop runs four times, creating four cloud objects
 
@@ -24,8 +25,10 @@ function setup() {
     clouds[n] = new Cloud();
   }
 
-  // Loop to create 200 raindrops
+  // Rain
   for (var i = 0; i < 200; i++) {
+    // Loop to create 200 raindrops
+
     // Create a new instance of the Drop class and store it in the drop array at index i
     drop[i] = new Drop();
   }
