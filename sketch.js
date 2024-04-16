@@ -2,9 +2,18 @@ let petals = []; // Array function that holds cherry blossom petals
 let clouds = []; // Array function that holds clouds
 let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
+var stars = []; // Array function that holds stars
 
 function setup() {
   createCanvas(800, 900);
+
+  // Stars
+  for (var s = 0; s < 1000; s++) {
+    // Loop 1000 times to create 1000 star objects
+
+    // Create a new star object and add it to the stars array
+    stars[s] = new Star();
+  }
 
   for (let n = 0; n < 6; n = n + 1) {
     // Loop runs four times, creating four cloud objects
@@ -818,6 +827,17 @@ function draw() {
     bezierVertex(width - 100, 160, width - 120, 50, width - 60, 40); // Invert x-coordinates of control points and adjust position
     endShape();
 
+    // Stars
+
+    // Set fill color to white (RGB 255,255,255)
+    fill(255);
+
+    // Loop through each star in the stars array
+    for (var s = 0; s < stars.length; s++) {
+      // Call the draw method for each star object
+      stars[s].draw();
+    }
+
     // Layer 1
     fill(102, 135, 215); // Set colour for all layer 1 assets
 
@@ -1546,6 +1566,33 @@ function Drop() {
       this.gravity = 0; // Reset gravity to prevent immediate fall
     }
   };
+}
+
+// Star class
+class Star {
+  // Constructor function to initialise a new Star object
+  constructor() {
+    // Set the x-coordinate of the star randomly within the width of the canvas
+    this.x = random(width);
+    // Set the y-coordinate of the star randomly within the height of the canvas
+    this.y = random(height);
+    // Set the size of the star randomly between 0.25 and 3
+    this.size = random(0.25, 3);
+    // Set the initial angle (phase) of the star's oscillation
+    this.t = random(TAU); // TAU is equivalent to 2 * PI, representing a full circle
+  }
+
+  // Method to draw the star
+  draw() {
+    // Increment the angle (phase) of the star's oscillation
+    this.t += 0.1;
+    // Calculate the scale factor based on the size and the sine function of the angle
+    var scale = this.size + sin(this.t) * 2;
+    // Set stroke to none
+    noStroke();
+    // Draw an ellipse (the star) at the current position with the calculated scale
+    ellipse(this.x, this.y, scale, scale);
+  }
 }
 
 // References:
