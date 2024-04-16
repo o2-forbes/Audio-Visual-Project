@@ -28,7 +28,7 @@ function setup() {
   // - Maximum value: 1
   // - Initial value: 1
   // - Step size: 0.01
-  sliderRate = createSlider(0, 1, 1, 0.01);
+  sliderRate = createSlider(0, 2, 1, 0.01);
 
   // Create a slider element to control the panning with the following parameters:
   // - Minimum value: 0
