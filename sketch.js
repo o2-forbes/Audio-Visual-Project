@@ -1057,6 +1057,9 @@ function draw() {
     // Draw a cloud shifted to the right and downwards from the original position
     makeCloud(cloudx + 100, cloudy + 100);
 
+    // Draw a cloud at a position shifted to the left and downwards from the original position
+    makeCloud(cloudx - 50, cloudy + 250);
+
     // Increment the horizontal position of the clouds by 0.1 units
     cloudx += 0.1;
 
