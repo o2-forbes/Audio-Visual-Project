@@ -27,6 +27,7 @@ function setup() {
   // - Initial value: 1
   // - Step size: 0.01
   sliderRate = createSlider(0, 2, 1, 0.01);
+  // Set the position of the sliderRate element to (600, 75) on the canvas
   sliderRate.position(600, 75);
 
   // Create a slider element to control the panning with the following parameters:
@@ -35,6 +36,7 @@ function setup() {
   // - Initial value: 0.5
   // - Step size: 0.01
   sliderPan = createSlider(-1, 1, 0, 0.01);
+  // Set the position of the sliderPan element to (1200, 75) on the canvas
   sliderPan.position(1200, 75);
 
   // Loop the loaded sound
