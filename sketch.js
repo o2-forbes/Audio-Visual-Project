@@ -1407,6 +1407,7 @@ function draw() {
     fill(225, 207, 138);
 
     // Building 1
+    // Draw rectangles representing lights for Building 1
     rect(690, 445, 5, 7, 2);
     rect(760, 510, 5, 7, 2);
     rect(720, 530, 5, 7, 2);
@@ -1415,6 +1416,7 @@ function draw() {
     rect(675, 675, 5, 7, 2);
 
     // Building 2
+    // Draw ellipses representing lights for Building 2
     ellipse(240, 510, 7, 7);
     ellipse(130, 580, 7, 7);
 
@@ -1612,6 +1614,32 @@ function draw() {
     // Floor
     rect(100, 835, 150, 65); // Draw a rectangle representing the floor on the left side
     rect(300, 870, 600, 65); // Draw a larger rectangle representing the floor on the right side
+
+    // Set fill colour to a light yellowish color
+    fill(225, 207, 138);
+
+    // Building 1
+    ellipse(630, 530, 12, 12);
+    ellipse(630, 650, 12, 12);
+    ellipse(630, 770, 12, 12);
+    ellipse(520, 650, 12, 12);
+    ellipse(520, 710, 12, 12);
+    ellipse(520, 845, 12, 12);
+
+    // Building 2
+    rect(390, 600, 10, 14, 2);
+    rect(390, 680, 10, 14, 2);
+    rect(390, 760, 10, 14, 2);
+    rect(230, 760, 10, 14, 2);
+    rect(230, 680, 10, 14, 2);
+
+    // Building 3
+    rect(90, 790, 10, 14, 2);
+    rect(90, 720, 10, 14, 2);
+    rect(90, 650, 10, 14, 2);
+    rect(40, 790, 10, 14, 2);
+    rect(40, 720, 10, 14, 2);
+    rect(40, 650, 10, 14, 2);
 
     // Rain
     fill(0);
