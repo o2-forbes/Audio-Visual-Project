@@ -36,7 +36,7 @@ function setup() {
   // - Maximum value: 1
   // - Initial value: 0.5
   // - Step size: 0.01
-  sliderPan = createSlider(0, 1, 0.5, 0.01);
+  sliderPan = createSlider(-1, 1, 0.5, 0.01);
 
   // Loop the loaded sound
   song1.loop();
