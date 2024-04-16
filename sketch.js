@@ -1,5 +1,6 @@
 let petals = []; // Array function that holds cherry blossom petals
 let clouds = []; // Array function that holds clouds
+let train = []; // Array function that holds train
 let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
