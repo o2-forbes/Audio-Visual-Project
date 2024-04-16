@@ -1812,5 +1812,7 @@ class Star {
 // https://editor.p5js.org/abrock/sketches/SyyaEusom
 // https://editor.p5js.org/kelsierose94/sketches/MU2Y21aG0
 // https://editor.p5js.org/wvnl/sketches/5wnuHAXKd
+// https://www.youtube.com/watch?v=XvO7k1LPRx8&list=PLorwxKPZJphyI8AH5Cm6dS-_Wqz6HWPr7&index=56
+// https://www.youtube.com/watch?v=o7uZpIY5qx0&list=PLorwxKPZJphyI8AH5Cm6dS-_Wqz6HWPr7&index=5
 // https://www.youtube.com/watch?app=desktop&v=SN9n2c37ZEQ
 // https://www.reddit.com/r/DigitalArt/comments/l8h8p1/city_skyline/
