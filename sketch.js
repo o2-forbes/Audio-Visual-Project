@@ -58,7 +58,7 @@ function setup() {
   // - Step size: 0.01
   sliderVolume = createSlider(0, 1, 0.5, 0.01);
   // Set the position of the sliderVolume element to (900, 75) on the canvas
-  sliderVolume.position(915, 75);
+  sliderVolume.position(915, 920);
 
   // Create a slider element to control the playback rate with the following parameters:
   // - Minimum value: 0
@@ -67,7 +67,7 @@ function setup() {
   // - Step size: 0.01
   sliderRate = createSlider(0, 2, 1, 0.01);
   // Set the position of the sliderRate element to (600, 75) on the canvas
-  sliderRate.position(615, 75);
+  sliderRate.position(615, 920);
 
   // Create a slider element to control the panning with the following parameters:
   // - Minimum value: -1
@@ -76,7 +76,7 @@ function setup() {
   // - Step size: 0.01
   sliderPan = createSlider(-1, 1, 0, 0.01);
   // Set the position of the sliderPan element to (1200, 75) on the canvas
-  sliderPan.position(1215, 75);
+  sliderPan.position(1215, 920);
 
   // Stars
   for (var s = 0; s < 1000; s++) {
