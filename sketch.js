@@ -963,11 +963,11 @@ function draw() {
     // Draw detail on the side of the building
     rect(40, 260, 2, 22);
 
-    // Lights
+    // Set fill colour to a light yellowish color
     fill(225, 207, 138);
 
-    // Layer 1
     // Building 1
+    // Draw ellipses representing windows for Building 1
     ellipse(675, 200, 5, 5);
     ellipse(685, 250, 5, 5);
     ellipse(670, 300, 5, 5);
@@ -979,6 +979,7 @@ function draw() {
     ellipse(725, 380, 5, 5);
 
     // Building 2
+    // Draw rectangles representing windows for Building 2
     rect(640, 305, 3, 5, 2);
     rect(620, 325, 3, 5, 2);
     rect(642, 335, 3, 5, 2);
@@ -990,9 +991,11 @@ function draw() {
     rect(625, 385, 3, 5, 2);
 
     // Building 3
+    // Draw an ellipse representing a window for Building 3
     ellipse(565, 375, 5, 5);
 
     // Building 4
+    // Draw rectangles representing windows for Building 4
     rect(355, 420, 3, 5, 2);
     rect(315, 375, 3, 5, 2);
     rect(315, 315, 3, 5, 2);
@@ -1002,13 +1005,11 @@ function draw() {
     rect(350, 360, 3, 5, 2);
 
     // Building 5
+    // Draw ellipses representing windows for Building 5
     ellipse(83, 267, 5, 5);
     ellipse(83, 317, 5, 5);
     ellipse(83, 367, 5, 5);
     ellipse(113, 357, 5, 5);
-
-    //Layer 2
-    //Building 1
 
     // Clouds
     for (let n = 0; n < clouds.length; n = n + 1) {
@@ -1242,6 +1243,38 @@ function draw() {
     // fill(216, 191, 216); // Fill colour for the connection
     // rect(294, 105, 6, 30); // Draw the connection between the carriages
 
+    // Set fill colour to a light yellowish color
+    fill(225, 207, 138);
+
+    // Building 1
+    // Draw rectangles representing lights for Building 1
+    rect(470, 450, 4, 6, 2);
+    rect(520, 470, 4, 6, 2);
+    rect(475, 505, 4, 6, 2);
+    rect(540, 500, 4, 6, 2);
+    rect(530, 515, 4, 6, 2);
+
+    // Building 2
+    // Draw an ellipse representing a light for Building 2
+    ellipse(385, 365, 6, 6);
+
+    // Building 3
+    // Draw a rectangle representing a light for Building 3
+    rect(290, 450, 4, 6, 2);
+
+    // Building 4
+    // Draw ellipses representing lights for Building 4
+    ellipse(225, 300, 6, 6);
+    ellipse(225, 450, 6, 6);
+    ellipse(165, 400, 6, 6);
+    ellipse(165, 360, 6, 6);
+
+    // Building 5
+    // Draw rectangles representing lights for Building 5
+    rect(45, 490, 4, 6, 2);
+    rect(45, 435, 4, 6, 2);
+    rect(45, 415, 4, 6, 2);
+
     // Layer 3
     fill(21, 42, 109); // Set colour for all layer 3 assets
 
@@ -1369,6 +1402,21 @@ function draw() {
     // Floor
     fill(21, 42, 109); // Set fill color to a shade of purple
     rect(300, 740, 600, 150); // Draw the floor rectangle
+
+    // Set fill colour to a light yellowish color
+    fill(225, 207, 138);
+
+    // Building 1
+    rect(690, 445, 5, 7, 2);
+    rect(760, 510, 5, 7, 2);
+    rect(720, 530, 5, 7, 2);
+    rect(680, 550, 5, 7, 2);
+    rect(710, 620, 5, 7, 2);
+    rect(675, 675, 5, 7, 2);
+
+    // Building 2
+    ellipse(240, 510, 7, 7);
+    ellipse(130, 580, 7, 7);
 
     // Layer 4
 
