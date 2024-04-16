@@ -24,8 +24,22 @@ function preload() {
   song1 = loadSound("Arukas Bloom Royalty Free 8 Bit Lofi Hip Hop.mp3");
   // song2 = loadSound("Rainy Village Royalty Free 8 Bit Lofi Hip Hop.mp3");
 
-  // Create a button element with the label "play"
-  button = createButton("play");
+  // Define a colour using RGB values
+  let col = color(0, 117, 255);
+
+  // Create a button element with the label "PLAY"
+  button = createButton("PLAY");
+
+  // Set the size of the button to 150 pixels wide and 100 pixels tall
+  button.size(150, 100);
+
+  // Set the position of the button on the canvas
+  button.position(400, 845);
+
+  // Apply custom CSS styles to the button
+  button.style("font-family", "Comic Sans MS"); // Set the font family to Comic Sans MS
+  button.style("font-size", "48px"); // Set the font size to 48 pixels
+  button.style("background-color", col); // Set the background colour using the previously defined color
 
   // Call the togglePlaying function when the button is pressed
   button.mousePressed(togglePlaying);
@@ -38,12 +52,12 @@ function togglePlaying() {
     // Start playing song1 in a loop (repeating playback)
     song1.loop();
     // Change the label of the button to "stop"
-    button.html("stop");
+    button.html("STOP");
   } else {
     // If song1 is currently playing, pause it
     song1.pause();
     // Change the label of the button to "play"
-    button.html("play");
+    button.html("PLAY");
   }
 }
 
@@ -58,7 +72,7 @@ function setup() {
   // - Step size: 0.01
   sliderVolume = createSlider(0, 1, 0.5, 0.01);
   // Set the position of the sliderVolume element to (900, 75) on the canvas
-  sliderVolume.position(915, 920);
+  sliderVolume.position(885, 920);
 
   // Create a slider element to control the playback rate with the following parameters:
   // - Minimum value: 0
@@ -67,7 +81,7 @@ function setup() {
   // - Step size: 0.01
   sliderRate = createSlider(0, 2, 1, 0.01);
   // Set the position of the sliderRate element to (600, 75) on the canvas
-  sliderRate.position(615, 920);
+  sliderRate.position(575, 920);
 
   // Create a slider element to control the panning with the following parameters:
   // - Minimum value: -1
@@ -103,15 +117,12 @@ function setup() {
   }
 }
 
-// Define a function called mousePressed()
-function mousePressed() {
-  // Check if the variable 'on' is true
-  if (on) {
-    // If 'on' is true, set it to false
-    on = false;
-  } else {
-    // If 'on' is false, set it to true
-    on = true;
+// Define a function called keyPressed()
+function keyPressed() {
+  // Check if the pressed key is the spacebar (keyCode 32)
+  if (keyCode === 32) {
+    // Toggle the value of the variable 'on'
+    on = !on;
   }
 }
 
