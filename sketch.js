@@ -33,8 +33,18 @@ function preload() {
 
 // Define a function named togglePlaying
 function togglePlaying() {
-  // Start playing song1 in a loop (repeating playback)
-  song1.loop();
+  // Check if song1 is not currently playing
+  if (!song1.isPlaying()) {
+    // Start playing song1 in a loop (repeating playback)
+    song1.loop();
+    // Change the label of the button to "stop"
+    button.html("stop");
+  } else {
+    // If song1 is currently playing, pause it
+    song1.pause();
+    // Change the label of the button to "play"
+    button.html("play");
+  }
 }
 
 function setup() {
