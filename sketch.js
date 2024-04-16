@@ -5,6 +5,7 @@ var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
 
 function setup() {
+  // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
 
   // Stars
