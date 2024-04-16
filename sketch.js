@@ -1,7 +1,7 @@
 let petals = []; // Array function that holds cherry blossom petals
 let clouds = []; // Array function that holds clouds
-let cloudx = 100; // Declare a variable 'cloudx' and initialize it with a value of 100
-let cloudy = 100; // Declare a variable 'cloudy' and initialize it with a value of 100
+let cloudx = 100; // Declare a variable 'cloudx' and initialise it with a value of 100
+let cloudy = 100; // Declare a variable 'cloudy' and initialise it with a value of 100
 let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
