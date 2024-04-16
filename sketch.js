@@ -28,7 +28,7 @@ function setup() {
   // - Initial value: 0.5
   // - Step size: 0.01
   sliderVolume = createSlider(0, 1, 0.5, 0.01);
-  // Set the position of the sliderVolume element to (600, 75) on the canvas
+  // Set the position of the sliderVolume element to (900, 75) on the canvas
   sliderVolume.position(900, 75);
 
   // Create a slider element to control the playback rate with the following parameters:
