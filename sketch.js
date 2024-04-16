@@ -7,7 +7,8 @@ var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
 var song1; // Declare a variable named 'song' to be used for storing a reference to a sound file
 var song2; // Declare a variable named 'song' to be used for storing a reference to a sound file
-var slider;
+var sliderRate; // Declare a variable named 'sliderRate'
+var sliderPan; // Declare a variable named 'sliderPan'
 
 // Preload function to load the sound file before the sketch starts
 function preload() {
@@ -19,14 +20,25 @@ function preload() {
 function setup() {
   // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
-  // Create a slider element with the following parameters:
+  // Set the volume of song1 to 0.5 (half of the maximum volume)
+  song1.setVolume(0.5);
+
+  // Create a slider element to control the playback rate with the following parameters:
+  // - Minimum value: 0
+  // - Maximum value: 1
+  // - Initial value: 1
+  // - Step size: 0.01
+  sliderRate = createSlider(0, 1, 1, 0.01);
+
+  // Create a slider element to control the panning with the following parameters:
   // - Minimum value: 0
   // - Maximum value: 1
   // - Initial value: 0.5
   // - Step size: 0.01
-  slider = createSlider(0, 1, 0.5, 0.01);
-  // Play the loaded sound
-  song1.play();
+  sliderPan = createSlider(0, 1, 0.5, 0.01);
+
+  // Loop the loaded sound
+  song1.loop();
 
   // Stars
   for (var s = 0; s < 1000; s++) {
@@ -122,8 +134,11 @@ function makeCloud(cloudx, cloudy) {
 }
 
 function draw() {
-  // Set the volume of song1 to the current value of a slider element
-  song1.setVolume(slider.value());
+  // Set the panning (stereo position) of song1 to the current value of a slider element named 'sliderPan'
+  song1.pan(sliderPan.value());
+
+  // Set the playback rate (speed) of song1 to the current value of a slider element named 'sliderRate'
+  song1.rate(sliderRate.value());
 
   if (on) {
     // Define the background gradient
