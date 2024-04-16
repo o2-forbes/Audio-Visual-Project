@@ -12,6 +12,12 @@ var sliderRate; // Declare a variable named 'sliderRate'
 var sliderPan; // Declare a variable named 'sliderPan'
 var button; // Declare a variable named 'button'
 
+// Define a function named loaded
+function loaded() {
+  // Log a message to the console indicating that the function has been called
+  console.log("loaded");
+}
+
 // Preload function to load the sound file before the sketch starts
 function preload() {
   // Load the sound files and assign it to the appropriate 'song' variable
