@@ -6,7 +6,7 @@ let on = true; // Initialise a variable called 'on' and set it to true
 var drop = []; // Array function that holds drops
 var stars = []; // Array function that holds stars
 var song1; // Declare a variable named 'song' to be used for storing a reference to a sound file
-var song2; // Declare a variable named 'song' to be used for storing a reference to a sound file
+// var song2; // Declare a variable named 'song' to be used for storing a reference to a sound file
 var sliderVolume; // Declare a variable named 'sliderVolume'
 var sliderRate; // Declare a variable named 'sliderRate'
 var sliderPan; // Declare a variable named 'sliderPan'
@@ -23,7 +23,7 @@ function loaded() {
 function preload() {
   // Load the sound files and assign it to the appropriate 'song' variable
   song1 = loadSound("Arukas Bloom Royalty Free 8 Bit Lofi Hip Hop.mp3");
-  song2 = loadSound("Rainy Village Royalty Free 8 Bit Lofi Hip Hop.mp3");
+  // song2 = loadSound("Rainy Village Royalty Free 8 Bit Lofi Hip Hop.mp3");
 
   // Define a colour using RGB values
   let col = color(0, 117, 255);
@@ -233,10 +233,18 @@ function draw() {
     }
 
     // Draw sun with glare
+
+    // Retrieve the current amplitude (volume level) from the amp object.
+    var vol = amp.getLevel();
+
+    // Map the amplitude value to a new range to determine the diameter of a circle.
+    // The amplitude value is mapped from the range [0, 0.5] to the range [350, 600].
+    var diam = map(vol, 0, 0.5, 350, 600);
+
     strokeWeight(2);
     stroke(255, 250, 205);
     fill(255, 250, 240); // Yellow colour for the sun
-    ellipse(sunX, sunY, sunRadius * 2); // Draw sun
+    ellipse(sunX, sunY, diam, diam); // Draw an ellipse (circle) at position (sunX, sunY) with a diameter of 'diam'.
     noStroke();
 
     // Add glare effect
@@ -962,11 +970,17 @@ function draw() {
       glowRadius += glowSizeStep; // Increase size for next ellipse
     }
 
-    // Draw sun with glare
+    // Retrieve the current amplitude (volume level) from the amp object.
+    var vol = amp.getLevel();
+
+    // Map the amplitude value to a new range to determine the diameter of a circle.
+    // The amplitude value is mapped from the range [0, 0.5] to the range [350, 600].
+    var diam = map(vol, 0, 0.5, 350, 600);
+
     strokeWeight(2);
     stroke(255, 250, 205);
     fill(255, 250, 240); // Yellow colour for the sun
-    ellipse(sunX, sunY, sunRadius * 2); // Draw sun
+    ellipse(sunX, sunY, diam, diam); // Draw an ellipse (circle) at position (sunX, sunY) with a diameter of 'diam'.
     noStroke();
 
     // Add glare effect
