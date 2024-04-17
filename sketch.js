@@ -178,8 +178,8 @@ function makeCloud(cloudx, cloudy) {
   noStroke();
   // Draw ellipses to create the cloud shape
   ellipse(cloudx, cloudy, 70, 50); // Main ellipse
-  ellipse(cloudx + 10, cloudy + 10, 70, 50); // Ellipse slightly shifted to the right and down
-  ellipse(cloudx - 20, cloudy + 10, 70, 50); // Ellipse slightly shifted to the left and down
+  ellipse(cloudx + 10, cloudy + 10, 70, 50);
+  ellipse(cloudx - 20, cloudy + 10, 70, 50);
 }
 
 function draw() {
