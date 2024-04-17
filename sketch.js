@@ -24,7 +24,7 @@ function preload() {
   song1 = loadSound("music/Arukas Bloom Royalty Free 8 Bit Lofi Hip Hop.mp3");
 
   // Define a colour using RGB values
-  let col = color(0, 117, 255);
+  let col = color(221, 160, 221);
 
   // Create a button element with the label "PLAY"
   button = createButton("PLAY");
