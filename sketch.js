@@ -11,6 +11,7 @@ var sliderVolume; // Declare a variable named 'sliderVolume'
 var sliderRate; // Declare a variable named 'sliderRate'
 var sliderPan; // Declare a variable named 'sliderPan'
 var button; // Declare a variable named 'button'
+var amp; // Declare a variable named 'amp'
 
 // Define a function named loaded
 function loaded() {
@@ -73,6 +74,10 @@ function keyPressed() {
 function setup() {
   // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
+
+  // Create a new instance of the p5.Amplitude object.
+  // This object will be used to measure the amplitude (volume level) of audio signals.
+  amp = new p5.Amplitude();
 
   // Create a slider element to control the volume with the following parameters:
   // - Minimum value: 0
