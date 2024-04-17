@@ -239,7 +239,7 @@ function draw() {
 
     // Map the amplitude value to a new range to determine the diameter of a circle.
     // The amplitude value is mapped from the range [0, 0.5] to the range [350, 600].
-    var diam = map(vol, 0, 0.5, 350, 600);
+    var diam = map(vol, 0, 0.5, 350, 550);
 
     strokeWeight(2);
     stroke(255, 250, 205);
@@ -975,7 +975,7 @@ function draw() {
 
     // Map the amplitude value to a new range to determine the diameter of a circle.
     // The amplitude value is mapped from the range [0, 0.5] to the range [350, 600].
-    var diam = map(vol, 0, 0.5, 350, 600);
+    var diam = map(vol, 0, 0.5, 350, 550);
 
     strokeWeight(2);
     stroke(255, 250, 205);
