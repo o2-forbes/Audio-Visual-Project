@@ -21,7 +21,7 @@ function loaded() {
 // Preload function to load the sound file before the sketch starts
 function preload() {
   // Load the sound files and assign it to the appropriate 'song' variable
-  song1 = loadSound("Arukas Bloom.mp3");
+  song1 = loadSound("arukasbloom.mp3");
 
   // Define a colour using RGB values
   let col = color(221, 160, 221);
