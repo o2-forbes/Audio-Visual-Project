@@ -61,6 +61,15 @@ function togglePlaying() {
   }
 }
 
+// Define a function called keyPressed()
+function keyPressed() {
+  // Check if the pressed key is the spacebar (keyCode 32)
+  if (keyCode === 32) {
+    // Toggle the value of the variable 'on'
+    on = !on;
+  }
+}
+
 function setup() {
   // Create a canvas with width 800 pixels and height 900 pixels
   createCanvas(800, 900);
@@ -114,15 +123,6 @@ function setup() {
 
     // Create a new instance of the Drop class and store it in the drop array at index i
     drop[i] = new Drop();
-  }
-}
-
-// Define a function called keyPressed()
-function keyPressed() {
-  // Check if the pressed key is the spacebar (keyCode 32)
-  if (keyCode === 32) {
-    // Toggle the value of the variable 'on'
-    on = !on;
   }
 }
 
