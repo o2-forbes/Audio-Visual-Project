@@ -9,7 +9,3 @@ body {
   height: 100vh;
   background-color: plum;
 }
-
-canvas {
-  display: block;
-}
