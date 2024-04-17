@@ -254,6 +254,7 @@ function draw() {
     ellipse(sunX + 50, sunY - 50, sunRadius * 0.8);
     ellipse(sunX - 30, sunY + 30, sunRadius * 0.5);
     ellipse(sunX + 70, sunY + 60, sunRadius * 0.6);
+
     // Layer 1
     fill(220, 108, 134); // Set colour for all layer 1 assets
 
